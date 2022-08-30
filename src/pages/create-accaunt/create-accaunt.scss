@@ -1,0 +1,26 @@
+.email {
+  display: flex;
+  gap: 30px;
+}
+
+.password {
+  display: flex;
+  input {
+    margin-left: 146px;
+  }
+}
+
+.create-accaunt {
+  margin-left: 210px;
+  width: max-content;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  input {
+    width: 300px;
+    margin-right: 2px;
+  }
+}

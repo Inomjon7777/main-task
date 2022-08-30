@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import "./header.scss";
 
@@ -7,9 +8,12 @@ export default class Header extends Component {
     return (
       <header>
         <div className="logo">
-          <h1>
-            CodingBat <span>code practice</span>
-          </h1>
+          <Link to="/header" style={{ textDecoration: "none" }}>
+            <h1>
+              CodingBat <span>code practice</span>
+            </h1>
+          </Link>
+
           <p>
             Welcome to Codingbat. See <a href="##">help</a> for the latest.
           </p>
@@ -33,9 +37,20 @@ export default class Header extends Component {
             </label>
             <button>log in</button>
             <ul>
-              {["forgot password", "create account"].map((item) => (
-                <li>{item}</li>
-              ))}
+              <Link to="reset-password" style={{ textDecoration: "none" }}>
+                forgot password
+              </Link>
+              <Link
+                to="sign-up"
+                style={{
+                  textDecoration: "none",
+                  marginLeft: "1rem",
+                  borderLeft: "1px solid #0000dd",
+                  paddingLeft: "1rem",
+                }}
+              >
+                create accaunt
+              </Link>
             </ul>
           </form>
         </div>

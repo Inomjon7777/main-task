@@ -30,6 +30,7 @@ header {
       list-style: none;
       gap: 20px;
       li {
+        cursor: pointer;
         margin: 0;
         color: #0000dd;
         &:not(:first-child) {
@@ -67,6 +68,7 @@ header {
         li {
           margin: 0.5rem;
           color: #5539bb;
+          cursor: pointer;
           &:nth-child(2) {
             border-left: 1px solid #0000dd;
             padding-left: 1rem;
