@@ -1,0 +1,13 @@
+.get {
+  display: flex;
+  width: max-content;
+
+  ul {
+    border: 1px solid blue;
+    padding: 20px;
+  }
+  li {
+    list-style: none;
+    border-bottom: 1px solid blue;
+  }
+}
