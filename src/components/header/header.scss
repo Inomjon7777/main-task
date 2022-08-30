@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .logo {
+  }
+  .validation {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      list-style: none;
+      gap: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid;
+      label {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        input {
+          margin-left: 1rem;
+        }
+      }
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
