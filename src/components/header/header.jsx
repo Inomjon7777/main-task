@@ -15,7 +15,7 @@ export default class Header extends Component {
           </p>
         </div>
         <div className="validation">
-          <ul>
+          <ul className="ul">
             {["about", "help", "code help+videos", "done", "prefs"].map(
               (item) => (
                 <li>{item}</li>
