@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Header from "./../../components/header/header";
 
 import "./create-accaunt.scss";
 import "./../../components/header/header.scss";
@@ -8,8 +7,6 @@ export default class CreateAccaunt extends Component {
   render() {
     return (
       <div className="create-account-wrapper">
-        <Header />
-
         <h3>
           <b>Create Account</b>
         </h3>

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import Header from "./../../components/header/header";
-
 import "./forgot-password.scss";
 import "./../../components/header/header.scss";
 
@@ -9,7 +7,6 @@ export default class ForgotPassword extends Component {
   render() {
     return (
       <div className="forgot-password-wrapper">
-        <Header />
         <h3>
           <b>Password Reset</b>
         </h3>

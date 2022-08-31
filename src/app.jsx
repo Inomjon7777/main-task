@@ -8,13 +8,13 @@ function App() {
   return (
     <>
       <div className="App">
+        <Header />
+        <Switch>
+          <Route path="/header" component={Header}></Route>
+          <Route path="/sign-up" component={CreateAccaunt}></Route>
+          <Route path="/reset-password" component={ForgotPassword}></Route>
+        </Switch>
       </div>
-
-      <Switch>
-        <Route path="/header" component={Header}></Route>
-        <Route path="/sign-up" component={CreateAccaunt}></Route>
-        <Route path="/reset-password" component={ForgotPassword}></Route>
-      </Switch>
     </>
   );
 }
