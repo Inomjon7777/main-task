@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="quiz.css" />
+  <title>Quiz-app</title>
+</head>
+
+<body>
+
+  <section class="login modal-bg">
+    <div class="user modal">
+      <img src="./logo.jpg" alt="" width="150px">
+      <input type="text" id="user-name" value="" placeholder="Ismingizni kiriting..." />
+      <input type="text" id="user-surname" value="" placeholder="Familiyangizni kiriting..." />
+      <input type="email" id="user-email" value="" placeholder="example@gmail.com" />
+      <button class="loginBtn">Login</button>
+    </div>
+  </section>
+
+  <section class="degree-zone">
+    <h1 class="degre-title">QUIZ APP</h1>
+    <button class="degree-button">Easy</button>
+    <button class="degree-button">Medium</button>
+    <button class="degree-button">Hard</button>
+  </section>
+
+  <section class="game-zone hide">
+    <div class="result-zone hide">
+      <div>
+        <h3>All results</h3>
+        <div class="row">
+          <div class="point-group">
+            <button class="point-result point--timeout" disabled>4</button>
+            <button class="point-result point--fail" disabled>3</button>
+          </div>
+          <div class="point-percent">46%</div>
+        </div>
+        <div class="row">
+          <div class="point-group">
+            <button class="point-result point--success" disabled>8</button>
+          </div>
+          <div class="point-percent">54%</div>
+        </div>
+        <button class="btn" id="btn-reset">reset</button>
+        <button class="btn" id="btn-show-answers">show results</button>
+      </div>
+    </div>
+    <header>
+      <h1 class="quiz-round"></h1>
+      <h1 class="timer">s</h1>
+    </header>
+    <div class="quiz-zone">
+      <div class="quiz">
+        <span class="first-number">1</span>
+        <span class="operation">+</span>
+        <span class="second-number">1</span>
+      </div>
+      <div class="answers">
+        <div class="row">
+          <div class="answer">1</div>
+          <div class="answer">2</div>
+        </div>
+        <div class="row">
+          <div class="answer">3</div>
+          <div class="answer">4</div>
+        </div>
+      </div>
+    </div>
+    <div class="points">
+      <!-- <button class="point point--success" disabled>1</button>
+        <button class="point point--fail" disabled>2</button>
+        <button class="point point--timeout" disabled>3</button> -->
+    </div>
+  </section>
+</body>
+<script type="module" src="./quiz.js"></script>
+
+</html>
