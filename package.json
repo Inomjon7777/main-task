@@ -1,0 +1,26 @@
+{
+  "name": "render-picture",
+  "version": "1.0.0",
+  "description": "for learning npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inomjon7777/learn-picture-package.git"
+  },
+  "keywords": [
+    "img",
+    "loading",
+    "npm",
+    "picture",
+    "render"
+  ],
+  "author": "Inomjonbek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Inomjon7777/learn-picture-package/issues"
+  },
+  "homepage": "https://github.com/Inomjon7777/learn-picture-package#readme"
+}
