@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+import ForgotPassword from "../../pages/forgot-password/forgot-password";
 import "./header.scss";
 
 export default class Header extends Component {

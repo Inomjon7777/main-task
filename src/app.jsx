@@ -10,9 +10,13 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/header" component={Header}></Route>
-          <Route path="/sign-up" component={CreateAccaunt}></Route>
-          <Route path="/reset-password" component={ForgotPassword}></Route>
+          <Route exact path="/" component={Header}></Route>
+          <Route exact path="/sign-up" component={CreateAccaunt}></Route>
+          <Route
+            exact
+            path="/reset-password"
+            component={ForgotPassword}
+          ></Route>
         </Switch>
       </div>
     </>
