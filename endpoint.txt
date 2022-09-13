@@ -1,0 +1,2 @@
+register endpoint => http://localhost:8080/api/users
+login endpoint => http://localhost:8080/api/auth
