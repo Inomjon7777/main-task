@@ -44,7 +44,19 @@ const loggerCar = ({
 };
 loggerCar(car);
 
-const mers = {
+const merc = {
   color: "black",
   isAirBag: true,
+  locations: {
+    country: "German",
+    city: "bayern",
+  },
+  setColor(color: string): void {
+    this.color = color;
+  },
 };
+
+const { color }: { color: string } = merc;
+const {
+  locations: { country, city },
+}: { locations: { country: string; city: string } } = merc;
