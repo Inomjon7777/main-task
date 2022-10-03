@@ -1,0 +1,36 @@
+$color--first: #555 !default;
+$color--second: #eb4d4d !default;
+$color--third: #f7f7f7 !default;
+$color--fourth: #fff !default;
+
+.btn {
+	position: absolute;
+	left: 50%;
+	width: 200px;
+	border: none;
+	background: none;
+	color: $color--first;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 20px;
+	font-family: Montserrat;
+	cursor: pointer;
+	transition: background-color .3s, color .3s;
+	transform: translateX(-50%);
+	&:hover {
+		font-weight: 600;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+.new {
+	top: 45px;
+}
+.roll {
+	top: 403px;
+}
+.hold {
+	top: 467px;
+}

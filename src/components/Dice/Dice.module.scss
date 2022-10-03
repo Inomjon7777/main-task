@@ -1,0 +1,16 @@
+.dice {
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	height: 100px;
+	border-radius: 1em;
+	box-shadow: 0 10px 60px rgba(0, 0, 0, .10);
+	transform: translateX(-50%);
+}
+
+#dice-1 {
+	top: 120px;
+}
+#dice-2 {
+	top: 250px;
+}

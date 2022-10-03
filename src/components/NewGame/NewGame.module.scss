@@ -1,0 +1,34 @@
+$color--first: #555 !default;
+$color--second: #eb4d4d !default;
+$color--third: #f7f7f7 !default;
+$color--fourth: #fff !default;
+
+.maxScore-label {
+	position: absolute;
+	top: 530px;
+	left: 50%;
+	padding: 10px;
+	width: 160px;
+	color: $color--first;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	transform: translateX(-50%);
+}
+
+.maxScore-input{
+	position: absolute;
+	top: 560px;
+	left: 50%;
+	padding: 10px;
+	width: 160px;
+	color: $color--first;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	transform: translateX(-50%);
+}
+
+.maxScore-input:focus {
+	outline: none;
+}

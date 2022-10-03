@@ -1,0 +1,13 @@
+$color--first: #555 !default;
+$color--second: #eb4d4d !default;
+$color--third: #f7f7f7 !default;
+$color--fourth: #fff !default;
+
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+	min-height: 65%;
+	background-color: $color--fourth;
+	box-shadow: 0 10px 50px rgba(0, 0, 0, .3);
+}

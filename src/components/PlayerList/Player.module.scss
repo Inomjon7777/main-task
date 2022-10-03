@@ -1,0 +1,77 @@
+$color--first: #555 !default;
+$color--second: #eb4d4d !default;
+$color--third: #f7f7f7 !default;
+$color--fourth: #fff !default;
+
+.player {
+	flex: 50%;
+	padding: 100px;
+	height: 600px;
+}
+
+.name {
+	position: relative;
+	margin: 20px 0 10px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: 100;
+	font-size: 40px;
+}
+
+.active {
+	background-color: $color--third;
+}
+
+.active .name {
+	font-weight: 300;
+}
+
+.active .name::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	display: block;
+	width: .3em;
+	height: .3em;
+	border-radius: 50%;
+	background: $color--second;
+	transform: translateY(-50%);
+}
+
+.player:nth-child(even) .name::after {
+	left: 10px;
+}
+
+.score {
+	margin-bottom: 130px;
+	color: $color--second;
+	text-align: center;
+	font-weight: 100;
+	font-size: 80px;
+}
+
+.current-box {
+	margin: 0 auto;
+	padding: 12px;
+	width: 40%;
+	background-color: $color--second;
+	color: $color--fourth;
+	text-align: center;
+}
+
+.current-label {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.current-score {
+	font-size: 30px;
+}
+
+.winner .name {
+	color: $color--second;
+	font-weight: 300;
+}
