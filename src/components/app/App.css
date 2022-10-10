@@ -1,0 +1,12 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+td {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  border: 2px solid #000 !important;
+  text-align: center;
+}
