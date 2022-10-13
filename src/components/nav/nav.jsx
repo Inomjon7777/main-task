@@ -1,5 +1,5 @@
 import React from "react";
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import logo from "../../assets/images/nav/logo.jpg";
 import loginIcon from "../../assets/icons/nav/login-icon.svg";
@@ -23,15 +23,15 @@ const Nav = () => {
         </ul>
       </div>
       <div className="registration">
-        {/* <Link to="/registration"> */}
+        <Link to="/registration">
           <button className="registrationBtn">Ro‘yxatdan o’tish</button>
-        {/* </Link> */}
-        {/* <Link to="/login"> */}
+        </Link>
+        <Link to="/login">
           <button className="accessBtn">
             <img src={loginIcon} alt="Icon not found" />
             Kirish
           </button>
-        {/* </Link> */}
+        </Link>
       </div>
     </div>
   );

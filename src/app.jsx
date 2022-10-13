@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Components
 import Nav from "./components/nav/nav";
@@ -9,11 +8,10 @@ import Advantages from "./components/advantages/advantages";
 import Tariffs from "./components/tariffs/tariffs";
 import Connection from "./components/connection/connection";
 import Footer from "./components/footer/footer";
-import Login from "./components/login/login";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Nav />
       <Hero />
       <Opportunities />
@@ -21,7 +19,7 @@ const App = () => {
       <Tariffs />
       <Connection />
       <Footer />
-    </div>
+    </>
   );
 };
 
