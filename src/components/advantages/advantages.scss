@@ -1,0 +1,64 @@
+.advantages {
+  background: #fff;
+  padding-top: 93px;
+  padding-bottom: 71px;
+  margin-top: 73px;
+  &-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    .banner {
+      img {
+        width: 500px;
+        height: 600px;
+        border-radius: 20px;
+      }
+    }
+    .information {
+      h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 45px;
+        margin: 0;
+        margin-bottom: 10px;
+        cursor: pointer;
+        span {
+          &:first-child {
+            background: linear-gradient(89.89deg, #3434ff 0.07%, #f42d2d 27.2%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+          }
+          &:last-child {
+            color: #000;
+          }
+        }
+      }
+      h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        color: #000;
+        cursor: pointer;
+        margin: 0px;
+        margin-top: 30px;
+
+        &:hover {
+          color: #0066ff;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: rgba(0, 0, 0, 0.54);
+        margin-top: 3px;
+      }
+    }
+  }
+}

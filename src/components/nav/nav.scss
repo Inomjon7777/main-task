@@ -1,0 +1,89 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 11rem;
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 28px;
+  }
+
+  .logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: #041429;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-left: 9.2px;
+    }
+  }
+
+  .navbar {
+    ul {
+      li {
+        cursor: pointer;
+        &:first-child {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #000;
+          text-shadow: 0px 0px 7px rgba(0, 102, 255, 0.11);
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+        }
+        &:not(:first-child) {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #686d74;
+        }
+      }
+    }
+  }
+  .registration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .registrationBtn {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #000;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+    .accessBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 19.5px;
+      background: #0066ff;
+      border: 1px solid #0066ff;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      gap: 6px;
+      margin-left: 25px;
+      transition: all 0.5s ease;
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
