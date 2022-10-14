@@ -231,3 +231,56 @@
     }
   }
 }
+
+// RESPONSE 800PX
+@media (max-width: 800px) {
+  .banner-box {
+    .imagePersonBack {
+      width: 270px; //
+    }
+
+    .imagePersonSide {
+      width: 400px; //
+    }
+
+    .imagePersonFront {
+      width: 195px; //
+    }
+
+    .imagePersonLaptop {
+      width: 195px; //
+    }
+    .toConnect {
+      position: absolute; //
+      right: 120px; //
+    }
+  }
+}
+
+// RESPONSE 700PX
+@media (max-width: 700px) {
+  .banner-box {
+    .imagePersonBack {
+      width: 195px; //
+    }
+
+    .imagePersonSide {
+      width: 380px; //
+    }
+
+    .imagePersonFront {
+      width: 185px; //
+    }
+
+    .imagePersonLaptop {
+      width: 185px; //
+    }
+    .toConnect {
+      position: absolute; //
+      right: 120px; //
+      img {
+        width: 13px; //
+      }
+    }
+  }
+}

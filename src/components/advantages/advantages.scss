@@ -139,3 +139,41 @@
     }
   }
 }
+
+// RESPONSE 800 PX
+@media (max-width: 800px) {
+  .advantages {
+    &-boxes {
+      .banner {
+        img {
+          width: 680px; //
+          height: 550px; //
+        }
+      }
+      .information {
+        h2 {
+          font-size: 42px; //
+        }
+      }
+    }
+  }
+}
+
+// RESPONSE 700 PX
+@media (max-width: 700px) {
+  .advantages {
+    &-boxes {
+      .banner {
+        img {
+          width: 585px; //
+          height: 540px; //
+        }
+      }
+      .information {
+        p {
+          margin-top: 1rem; //
+        }
+      }
+    }
+  }
+}

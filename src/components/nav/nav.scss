@@ -132,3 +132,12 @@
     }
   }
 }
+
+// RESPONSE 800PX
+@media (max-width: 800px) {
+  .navigation {
+    .navbar ul {
+      display: none;
+    }
+  }
+}

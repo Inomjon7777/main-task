@@ -115,8 +115,26 @@
   }
 }
 
+// RESPONSIVE 992PX
 @media (max-width: 992px) {
   .container {
     padding: 0 3rem;
+  }
+}
+
+// RESPONSIVE 700PX
+@media (max-width: 700px) {
+  .footer {
+    .title {
+      margin: 1.7rem; //
+    }
+    .description {
+      font-size: 14px; //
+    }
+    .socialNetworks {
+      img {
+        padding: 5px; //
+      }
+    }
   }
 }

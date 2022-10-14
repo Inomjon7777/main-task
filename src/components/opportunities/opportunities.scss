@@ -136,3 +136,28 @@
     }
   }
 }
+@media (max-width: 800px) {
+  .opportunities {
+    .title-box {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .title {
+        span {
+          font-size: 45px; //
+        }
+      }
+      .description {
+        font-size: 20px; //
+        padding-top: 30px; //
+      }
+    }
+    .opportunity-boxes {
+      & > div {
+        h3 {
+          font-size: 1.1rem; //
+        }
+      }
+    }
+  }
+}

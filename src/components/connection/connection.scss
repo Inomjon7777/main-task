@@ -103,6 +103,7 @@
   }
 }
 
+// RESPONSIVE 992PX
 @media (max-width: 992px) {
   .connection {
     .container {
@@ -120,6 +121,19 @@
       display: grid; //
       grid-template-columns: repeat(2, 1fr); //
       grid-template-rows: repeat(2, 1fr); //
+    }
+  }
+}
+
+// RESPONSIVE 700PX
+@media (max-width: 700px) {
+  .connection {
+    .connection-boxes {
+      .location-box,
+      .message-box,
+      .phone-box {
+        padding: 20px; //
+      }
     }
   }
 }
