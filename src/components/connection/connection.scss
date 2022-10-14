@@ -1,8 +1,8 @@
 .connection {
   background: #fff;
-  height: 100vh;
   display: grid;
   place-items: center;
+  padding: 5rem 0;
   .title {
     text-align: center;
     h1 {
@@ -59,6 +59,46 @@
       font-size: 16px;
       line-height: 26px;
       color: #696871;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .connection {
+    padding: 0rem 0rem 3rem 0rem;
+    .container {
+      padding: 5rem;
+    }
+
+    .title {
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .connection-boxes {
+      .location-box,
+      .message-box,
+      .phone-box {
+        padding: 40px 60px;
+      }
+      img {
+        padding: 25px;
+      }
+      p {
+        br {
+        }
+      }
+      .location-box {
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
     }
   }
 }

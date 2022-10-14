@@ -1,7 +1,6 @@
 .advantages {
-  background: #fff;
-  padding-top: 93px;
-  padding-bottom: 71px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 73px;
   &-boxes {
     display: flex;
@@ -58,6 +57,84 @@
         line-height: 26px;
         color: rgba(0, 0, 0, 0.54);
         margin-top: 3px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .advantages {
+    .container {
+      padding: 5rem 5rem;
+    }
+    padding: 0px;
+    margin-top: 20px;
+    &-boxes {
+      gap: 50px;
+      .banner {
+        img {
+          width: 400px;
+          height: 500px;
+        }
+      }
+      .information {
+        h2 {
+          font-size: 32px;
+          margin-bottom: 0px;
+        }
+        h3 {
+          font-size: 18px;
+          line-height: 20px;
+          margin-top: 30px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .advantages {
+    .container {
+      padding: 0 3rem;
+    }
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 73px;
+    &-boxes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column-reverse;
+      .banner {
+        img {
+          width: 875px;
+          height: 600px;
+          object-fit: cover;
+          object-position: 0px 30%;
+        }
+      }
+      .information {
+        h2 {
+          font-size: 36px;
+        }
+        h3 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 32px;
+          margin: 0px;
+          margin-top: 30px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 26px;
+          margin-top: 3px;
+        }
       }
     }
   }

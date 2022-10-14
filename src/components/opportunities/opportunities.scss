@@ -67,3 +67,72 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .opportunities {
+    .container {
+      padding: 0rem 5rem;
+    }
+    .title-box {
+      .title {
+        br {
+          display: none;
+        }
+        span {
+          font-size: 40px;
+        }
+      }
+      .description {
+        font-size: 14px;
+      }
+    }
+    .opportunity-boxes {
+      margin-top: 45px;
+      .checkBox,
+      .customerSupportBox,
+      .linkBox,
+      .onlineMeetingBox,
+      .peopleBox,
+      .pieChartBox,
+      .recordBox,
+      .securityBox,
+      .videoCallBox {
+        br {
+          display: none;
+        }
+        padding: 20px 20px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .opportunities {
+    .container {
+      padding: 0 3rem;
+    }
+    .title-box {
+      margin-top: 5rem;
+      .title {
+        span {
+          font-size: 40px;
+        }
+      }
+    }
+    .opportunity-boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      & > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  }
+}

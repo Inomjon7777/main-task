@@ -1,5 +1,5 @@
 .hero {
-  height: 90vh;
+  margin: 6rem 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,6 +125,109 @@
       &:active {
         transform: scale(0.9);
       }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .hero {
+    padding: 0rem 5rem;
+    .suptitle {
+      font-size: 15px;
+    }
+    .title {
+      font-size: 45px;
+      line-height: 65px;
+    }
+    .subtitle {
+      font-size: 15.5px;
+      line-height: 24px;
+    }
+
+    .hero-btn-group {
+      gap: 15px;
+      button {
+        &:first-child {
+          padding: 11px 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 3rem;
+    margin: 2rem 0rem;
+    .suptitle {
+      font-size: 35px;
+      margin-top: 0rem;
+    }
+    .title {
+      font-size: 40px;
+      line-height: 0px;
+      margin-top: 0.5rem;
+    }
+    .subtitle {
+      font-size: 16px;
+      line-height: 0px;
+      margin-top: 3.5rem;
+    }
+    .hero-btn-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      button {
+        &:first-child {
+          padding: 5px 15px;
+        }
+      }
+    }
+    .imagePersonBack {
+      grid-area: myArea1;
+      width: 335px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 10px;
+      object-position: 0px 40%;
+    }
+
+    .imagePersonSide {
+      grid-area: myArea2;
+      width: 530px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      object-position: center;
+      object-position: 0px 30%;
+    }
+
+    .imagePersonFront {
+      grid-area: myArea3;
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      object-position: center;
+      object-position: 0px 40%;
+    }
+
+    .imagePersonLaptop {
+      grid-area: myArea4;
+      width: 270px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      object-position: center;
+      object-position: 0px 30%;
+    }
+    .banner-box {
+      margin-top: 1rem;
     }
   }
 }

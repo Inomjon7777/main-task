@@ -15,6 +15,27 @@
     align-items: center;
     list-style: none;
     gap: 28px;
+    li {
+      cursor: pointer;
+      &:first-child {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000;
+        text-shadow: 0px 0px 7px rgba(0, 102, 255, 0.11);
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+      &:not(:first-child) {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #686d74;
+      }
+    }
   }
 
   .logo {
@@ -27,32 +48,6 @@
       font-weight: bold;
       font-size: 1.1rem;
       margin-left: 9.2px;
-    }
-  }
-
-  .navbar {
-    ul {
-      li {
-        cursor: pointer;
-        &:first-child {
-          font-style: normal;
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 17px;
-          color: #000;
-          text-shadow: 0px 0px 7px rgba(0, 102, 255, 0.11);
-          flex: none;
-          order: 0;
-          flex-grow: 0;
-        }
-        &:not(:first-child) {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 17px;
-          color: #686d74;
-        }
-      }
     }
   }
   .registration {
@@ -83,6 +78,56 @@
       transition: all 0.5s ease;
       &:active {
         transform: scale(0.9);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .navigation {
+    padding: 0rem 5rem;
+
+    .navbar ul {
+      gap: 25px;
+    }
+
+    .registration {
+      .accessBtn {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .navigation {
+    padding: 5px 3rem;
+
+    .navbar ul {
+      gap: 18px;
+      li {
+        &:first-child {
+          font-size: 13px;
+        }
+        &:not(:first-child) {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .logo {
+      p {
+        font-size: 1.1rem;
+        margin-left: 9px;
+      }
+    }
+    .registration {
+      .registrationBtn {
+        font-size: 14px;
+      }
+      .accessBtn {
+        padding: 8px 15px;
+        margin-left: 13px;
       }
     }
   }

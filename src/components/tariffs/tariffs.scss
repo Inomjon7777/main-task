@@ -1,6 +1,7 @@
 .tariffs {
-  height: 100vh;
   padding-top: 74px;
+  padding-bottom: 5rem;
+
   .title-box {
     & > h1 {
       text-align: center;
@@ -106,6 +107,10 @@
       }
     }
     button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       cursor: pointer;
       background: #0066ff;
       color: #fff;
@@ -117,6 +122,104 @@
       transition: all 0.5s ease;
       &:active {
         transform: scale(0.9);
+      }
+    }
+  }
+}
+
+// RESPONSIVE 1200PX
+@media (max-width: 1200px) {
+  .tariffs {
+    padding-bottom: 5rem;
+    .container {
+      padding: 0rem 5rem;
+    }
+    padding-top: 0px;
+    .title-box {
+      & > h1 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+    .tariffs-boxes {
+      margin-top: 50px;
+      gap: 20px;
+      .start-box,
+      .standart-box,
+      .premium-box {
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .title-box {
+        margin-bottom: 20px;
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+        p {
+          &:last-child {
+            margin: 0;
+            margin-top: 3px;
+            span {
+              &:first-child {
+                font-size: 25px;
+                line-height: 20px;
+              }
+              &:last-child {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+      button {
+        padding: 14px 80px;
+        font-size: 13px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+// RESPONSIVE 992px
+@media (max-width: 992px) {
+  .tariffs {
+    .container {
+      padding: 0 3rem; //
+    }
+    padding-top: 40px; //
+    .title-box {
+      & > h1 {
+        font-size: 40px; //
+        line-height: 20px; //
+      }
+    }
+    .tariffs-boxes {
+      margin-top: 50px; //
+      display: grid; //
+      grid-template-columns: repeat(2, 1fr); //
+      grid-template-rows: repeat(2, 1fr); //
+
+      .title-box {
+        display: flex; //
+        justify-content: flex-start; //
+        p {
+          &:last-child {
+            margin: 0; //
+            margin-top: 12px; //
+            span {
+              &:first-child {
+                font-size: 48px; //
+              }
+            }
+          }
+        }
+      }
+      button {
+        padding: 14px 133px; //
       }
     }
   }
