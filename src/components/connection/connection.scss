@@ -102,3 +102,24 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .connection {
+    .container {
+      padding: 0 3rem; //
+    }
+    .title {
+      h1 {
+        font-size: 40px; //
+        line-height: 20px; //
+        padding-top: 4rem; //
+      }
+    }
+
+    .connection-boxes {
+      display: grid; //
+      grid-template-columns: repeat(2, 1fr); //
+      grid-template-rows: repeat(2, 1fr); //
+    }
+  }
+}
