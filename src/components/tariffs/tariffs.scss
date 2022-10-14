@@ -278,8 +278,13 @@
       }
 
       .title-box {
+        img {
+          height: 83px;
+          width: 83px;
+        }
         p {
           &:last-child {
+            margin-top: 8px; //
             span {
               &:first-child {
                 font-size: 28px; //
@@ -294,7 +299,7 @@
         }
       }
       button {
-        width: 200px; //
+        width: 211px; //
       }
     }
   }
