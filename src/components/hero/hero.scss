@@ -259,27 +259,36 @@
 
 // RESPONSE 700PX
 @media (max-width: 700px) {
-  .banner-box {
-    .imagePersonBack {
-      width: 195px; //
+  .hero {
+    .subtitle {
+      line-height: 20px; //
     }
+    .banner-box {
+      .imagePersonBack {
+        width: 195px; //
+        height: 280px; //
+      }
 
-    .imagePersonSide {
-      width: 380px; //
-    }
+      .imagePersonSide {
+        width: 380px; //
+        height: 140px; //
+      }
 
-    .imagePersonFront {
-      width: 185px; //
-    }
+      .imagePersonFront {
+        width: 185px; //
+        height: 127px; //
+      }
 
-    .imagePersonLaptop {
-      width: 185px; //
-    }
-    .toConnect {
-      position: absolute; //
-      right: 120px; //
-      img {
-        width: 13px; //
+      .imagePersonLaptop {
+        width: 185px; //
+        height: 127px; //
+      }
+      .toConnect {
+        position: absolute; //
+        right: 120px; //
+        img {
+          width: 12px; //
+        }
       }
     }
   }
