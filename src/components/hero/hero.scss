@@ -293,3 +293,52 @@
     }
   }
 }
+
+// RESPONSE 600PX
+@media (max-width: 600px) {
+  .hero {
+    .suptitle {
+      font-size: 25px; //
+    }
+    .title {
+      line-height: 35px; //
+    }
+    .subtitle {
+      line-height: 20px; //
+    }
+    .banner-box {
+      .imagePersonBack {
+        width: 180px; //
+        height: 280px; //
+      }
+
+      .imagePersonSide {
+        width: 290px; //
+        height: 140px; //
+      }
+
+      .imagePersonFront {
+        width: 140px; //
+        height: 127px; //
+      }
+
+      .imagePersonLaptop {
+        width: 140px; //
+        height: 127px; //
+      }
+      .toConnect {
+        position: absolute; //
+        right: 90px; //
+        bottom: 30px; //
+        padding: 5px 10px; //
+      }
+    }
+  }
+  .banner-box {
+    position: relative;
+    display: grid;
+    grid-template-areas: "myArea1 myArea1 myArea1" "myArea1 myArea3 myArea4";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+}

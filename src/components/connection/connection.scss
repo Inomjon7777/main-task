@@ -63,6 +63,7 @@
   }
 }
 
+// RESPONSIVE 1200PX
 @media (max-width: 1200px) {
   .connection {
     padding: 0rem 0rem 3rem 0rem;
@@ -133,6 +134,31 @@
       .message-box,
       .phone-box {
         padding: 20px; //
+      }
+    }
+  }
+}
+
+// RESPONSIVE 600PX
+@media (max-width: 600px) {
+  .connection {
+    .title {
+      p {
+        font-size: 20px; //
+      }
+    }
+    .connection-boxes {
+      display: grid; //
+      grid-template-columns: 1fr; //
+      .location-box,
+      .message-box,
+      .phone-box {
+        h3 {
+          font-size: 45px; //
+        }
+        p {
+          font-size: 20px; //
+        }
       }
     }
   }

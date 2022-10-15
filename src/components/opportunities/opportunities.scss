@@ -161,3 +161,37 @@
     }
   }
 }
+
+// RESPONSIVE 600PX
+@media (max-width: 600px) {
+  .opportunities {
+    .title-box {
+      .title {
+        span {
+          font-size: 40px; //
+        }
+      }
+      .description {
+        font-size: 18px; //
+        padding-top: 20px; //
+        br {
+          display: none; //
+        }
+      }
+    }
+    .opportunity-boxes {
+      & > div {
+        img {
+          width: 40px; //
+          height: 40px; //
+        }
+        h3 {
+          font-size: 1rem; //
+        }
+        p {
+          font-size: 14px; //
+        }
+      }
+    }
+  }
+}

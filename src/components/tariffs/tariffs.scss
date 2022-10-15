@@ -304,3 +304,52 @@
     }
   }
 }
+
+// RESPONSIVE 600px
+@media (max-width: 600px) {
+  .tariffs {
+    .title-box {
+      & > h1 {
+        font-size: 40px; //
+      }
+    }
+    .tariffs-boxes {
+      display: grid; //
+      grid-template-columns: 1fr; //
+      .start-box,
+      .standart-box,
+      .premium-box {
+        p {
+          font-size: 20px; //
+        }
+      }
+
+      .title-box {
+        img {
+          height: 123px; //
+          width: 133px; //
+        }
+        p {
+          &:first-child {
+            font-size: 40px; //
+          }
+          &:last-child {
+            span {
+              &:first-child {
+                font-size: 38px; //
+              }
+              &:last-child {
+                line-height: 3.5rem; //
+                font-size: 1.3rem; //
+              }
+            }
+          }
+        }
+      }
+      button {
+        width: 400px; //
+        font-size: 20px; //;;
+      }
+    }
+  }
+}

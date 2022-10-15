@@ -177,3 +177,22 @@
     }
   }
 }
+
+// RESPONSE 600 PX
+@media (max-width: 600px) {
+  .advantages {
+    &-boxes {
+      .banner {
+        img {
+          width: 480px; //
+          height: 540px; //
+        }
+      }
+      .information {
+        h2 {
+          font-size: 40px; //;;
+        }
+      }
+    }
+  }
+}
