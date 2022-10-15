@@ -115,14 +115,18 @@
   }
 }
 
-// RESPONSIVE 992PX
+@media (max-width: 1100px) {
+  .footer {
+    .container {
+      padding: 0 3rem;
+    }
+  }
+}
 @media (max-width: 992px) {
   .container {
     padding: 0 3rem;
   }
 }
-
-// RESPONSIVE 700PX
 @media (max-width: 700px) {
   .footer {
     .title {
@@ -138,8 +142,6 @@
     }
   }
 }
-
-// RESPONSIVE 500PX
 @media (max-width: 500px) {
   .footer {
     .container {

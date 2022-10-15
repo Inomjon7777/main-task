@@ -127,7 +127,27 @@
   }
 }
 
-// RESPONSIVE 1200PX
+@media (max-width: 1400px) {
+  .tariffs {
+    .container {
+      padding: 0rem 4rem;
+    }
+    .tariffs-boxes {
+      button {
+        padding: 14px 117px;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .tariffs {
+    .tariffs-boxes {
+      button {
+        padding: 14px 100px;
+      }
+    }
+  }
+}
 @media (max-width: 1200px) {
   .tariffs {
     padding-bottom: 5rem;
@@ -183,8 +203,18 @@
     }
   }
 }
-
-// RESPONSIVE 992px
+@media (max-width: 1100px) {
+  .tariffs {
+    .container {
+      padding: 0 3rem;
+    }
+    .tariffs-boxes {
+      button {
+        padding: 14px 76px;
+      }
+    }
+  }
+}
 @media (max-width: 992px) {
   .tariffs {
     .container {
@@ -224,8 +254,6 @@
     }
   }
 }
-
-// RESPONSIVE 800px
 @media (max-width: 800px) {
   .tariffs {
     .tariffs-boxes {
@@ -255,8 +283,6 @@
     }
   }
 }
-
-// RESPONSIVE 700px
 @media (max-width: 700px) {
   .tariffs {
     .title-box {
@@ -304,8 +330,6 @@
     }
   }
 }
-
-// RESPONSIVE 600px
 @media (max-width: 600px) {
   .tariffs {
     .title-box {
@@ -353,8 +377,6 @@
     }
   }
 }
-
-// RESPONSIVE 500px
 @media (max-width: 500px) {
   .tariffs {
     .container {
@@ -403,12 +425,10 @@
     }
   }
 }
-
-// RESPONSIVE 500px
 @media (max-width: 500px) {
   .tariffs {
     .container {
-      padding: 0.5rem 2rem; //
+      padding: 0.5rem 3rem; //
     }
     .title-box {
       & > h1 {
@@ -446,8 +466,8 @@
         }
       }
       button {
-        width: 265px; //
-        font-size: 20px;
+        width: 320px; //
+        font-size: 20px; //
       }
     }
   }

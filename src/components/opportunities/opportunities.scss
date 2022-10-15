@@ -68,6 +68,11 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .container {
+    padding: 0rem 4rem;
+  }
+}
 @media (max-width: 1200px) {
   .opportunities {
     .container {
@@ -108,7 +113,13 @@
     }
   }
 }
-
+@media (max-width: 1100px) {
+  .opportunities {
+    .container {
+      padding: 0 3rem;
+    }
+  }
+}
 @media (max-width: 992px) {
   .opportunities {
     .container {
@@ -161,8 +172,6 @@
     }
   }
 }
-
-// RESPONSIVE 600PX
 @media (max-width: 600px) {
   .opportunities {
     .title-box {
@@ -195,8 +204,6 @@
     }
   }
 }
-
-// RESPONSIVE 600PX
 @media (max-width: 600px) {
   .opportunities {
     .container {
@@ -230,8 +237,6 @@
     }
   }
 }
-
-// RESPONSIVE 412PX
 @media (max-width: 412px) {
   .opportunities {
     .container {

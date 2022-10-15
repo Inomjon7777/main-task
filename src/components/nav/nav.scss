@@ -83,6 +83,12 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .navigation {
+    padding: 0rem 4rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .navigation {
     padding: 0rem 5rem;
@@ -96,6 +102,12 @@
         margin-left: 20px;
       }
     }
+  }
+}
+
+@media (max-width: 1100px) {
+  .navigation {
+    padding: 0rem 3rem;
   }
 }
 

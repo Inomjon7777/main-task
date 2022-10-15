@@ -63,7 +63,37 @@
   }
 }
 
-// RESPONSIVE 1200PX
+@media (max-width: 1400px) {
+  .connection {
+    .container {
+      padding: 0rem 4rem;
+    }
+    .connection-boxes {
+      .location-box,
+      .message-box,
+      .phone-box {
+        padding: 49px 86px;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .connection {
+    .container {
+      padding: 0rem 4rem;
+    }
+    .connection-boxes {
+      .location-box,
+      .message-box,
+      .phone-box {
+        padding: 49px 86px;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1200px) {
   .connection {
     padding: 0rem 0rem 3rem 0rem;
@@ -103,8 +133,14 @@
     }
   }
 }
-
-// RESPONSIVE 992PX
+@media (max-width: 1100px) {
+  .connection {
+    padding-top: 2rem;
+    .container {
+      padding: 0 3rem;
+    }
+  }
+}
 @media (max-width: 992px) {
   .connection {
     .container {
@@ -125,8 +161,6 @@
     }
   }
 }
-
-// RESPONSIVE 700PX
 @media (max-width: 700px) {
   .connection {
     .connection-boxes {
@@ -138,8 +172,6 @@
     }
   }
 }
-
-// RESPONSIVE 600PX
 @media (max-width: 600px) {
   .connection {
     .title {
@@ -163,8 +195,6 @@
     }
   }
 }
-
-// RESPONSIVE 500PX
 @media (max-width: 500px) {
   .connection {
     .container {
