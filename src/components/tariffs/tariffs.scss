@@ -26,6 +26,29 @@
       text-align: center;
       color: rgba(0, 0, 0, 0.54);
     }
+    img {
+      border-radius: 20px;
+      animation-name: tariffsAnimation;
+      animation-timing-function: 0.5s;
+      animation-delay: inherit;
+      animation-iteration-count: infinite;
+      animation-duration: 4s;
+      animation-direction: alternate;
+    }
+
+    @keyframes tariffsAnimation {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(360deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }
   }
   .tariffs-boxes {
     margin-top: 80px;
@@ -120,6 +143,28 @@
       font-size: 14px;
       margin-top: 35px;
       transition: all 0.5s ease;
+
+      border-radius: 20px;
+      animation-name: buyButtonAnimation;
+      animation-timing-function: 0.5s;
+      animation-delay: inherit;
+      animation-iteration-count: infinite;
+      animation-duration: 4s;
+      animation-direction: alternate;
+
+      @keyframes buyButtonAnimation {
+        0% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.1);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
       &:active {
         transform: scale(0.9);
       }

@@ -67,20 +67,21 @@
       font-size: 14px;
       color: #4c535c;
     }
+
     .lines {
       display: flex;
       justify-content: space-between;
-      gap: 10px;
+      gap: 0px;
       margin-top: 38px;
-      span {
-        width: 100%;
+      div {
+        width: 105px;
         height: 10px;
         background: #edeef2;
         border-radius: 20px;
         cursor: pointer;
-        &:first-child {
-          background: #0066ff;
-        }
+      }
+      .phoneNumberSection {
+        background: #0066ff;
       }
     }
     form {

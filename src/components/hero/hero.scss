@@ -129,6 +129,94 @@
   }
 }
 
+.imagePersonBack {
+  animation-name: personBackAnimation;
+  animation-timing-function: 0.5s;
+  animation-delay: inherit;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+}
+@keyframes personBackAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.imagePersonFront {
+  animation-name: personFrontAnimation;
+  animation-timing-function: 0.5s;
+  animation-delay: inherit;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+}
+@keyframes personFrontAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.imagePersonLaptop {
+  animation-name: personBackAnimation;
+  animation-timing-function: 0.5s;
+  animation-delay: inherit;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+}
+@keyframes imagePersonLaptop {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.imagePersonSide {
+  animation-name: personSideAnimation;
+  animation-timing-function: 0.5s;
+  animation-delay: inherit;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+}
+@keyframes personSideAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 1400px) {
   .hero {
     padding: 0rem 4rem;

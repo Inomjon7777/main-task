@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 
-import logo from "../../assets/images/login/logo.jpg";
+import logo from "../../../assets/images/login/logo.jpg";
 
-import iconFacebook from "../../assets/icons/login/facebook.svg";
-import iconApple from "../../assets/icons/login/apple.svg";
-import iconGoogle from "../../assets/icons/login/google.svg";
+import iconFacebook from "../../../assets/icons/login/facebook.svg";
+import iconApple from "../../../assets/icons/login/apple.svg";
+import iconGoogle from "../../../assets/icons/login/google.svg";
 
-import "./registration.scss";
 import { Link } from "react-router-dom";
-import PasswordSection from "./confirmationCode/confirmationCode";
+import PasswordSection from "./confirmationCode";
 
-const Registration = () => {
+import "./confirmationCode.scss";
+
+const ConfirmationCode = () => {
   return (
     <div className="registration-page">
       <div className="registration-box">
@@ -28,27 +29,26 @@ const Registration = () => {
         <p className="processes">Jarayonlardan to‘g‘ri o‘ting</p>
         <div className="lines">
           <div className="phoneNumberSection"></div>
-          <div className="confirmationCode"></div>
+
+          <Link to={"/confirmationCode"}>
+            <div className="confirmationCode"></div>
+          </Link>
+
           <Link to={"/congratulation"}>
             <div className="congratulation"></div>
           </Link>
         </div>
         <form>
           <div className="phoneNumberBox">
-            <p>Telefon raqamini kiriting</p>
+            <p>Tasdiqlash kodi</p>
             <div className="phoneNumberBoxMain">
-              <select>
-                <option value="UZB">+998</option>
-                <option value="BRA">+55</option>
-                <option value="CAN">+1</option>
-                <option value="CHN">+86</option>
-                <option value="IND">+91</option>
-              </select>
-              <input type="text" placeholder="99 123 45 67" />
+              <input type="text" placeholder="1 2 3 4 5 6" />
+              kod kelmadi
             </div>
+            <p>00:55</p>
           </div>
         </form>
-        <Link to={"/confirmationCode"}>
+        <Link to={"/congratulation"}>
           <button className="nextBtn">Keyingi</button>
         </Link>
       </div>
@@ -57,4 +57,4 @@ const Registration = () => {
   );
 };
 
-export default Registration;
+export default ConfirmationCode;
