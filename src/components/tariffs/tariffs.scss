@@ -472,3 +472,15 @@
     }
   }
 }
+@media (max-width: 412px) {
+  .tariffs {
+    .container {
+      padding: 0.5rem 2rem; //
+    }
+    .tariffs-boxes {
+      button {
+        width: 275px; //
+      }
+    }
+  }
+}
