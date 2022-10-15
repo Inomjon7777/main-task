@@ -230,3 +230,38 @@
     }
   }
 }
+
+// RESPONSIVE 412PX
+@media (max-width: 412px) {
+  .opportunities {
+    .container {
+      padding: 0.5rem 2.5rem; //
+    }
+    .title-box {
+      .title {
+        span {
+          font-size: 2rem; //
+        }
+      }
+      .description {
+        font-size: 16px; //
+      }
+    }
+    .opportunity-boxes {
+      display: grid; //
+      grid-template-columns: 1fr; //
+      & > div {
+        img {
+          width: 60px; //
+          height: 60px; //
+        }
+        h3 {
+          font-size: 1.5rem; //
+        }
+        p {
+          font-size: 1rem; //
+        }
+      }
+    }
+  }
+}

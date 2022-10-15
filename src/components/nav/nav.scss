@@ -157,3 +157,26 @@
     }
   }
 }
+
+// MAX-WIDTH 412PX
+@media (max-width: 412px) {
+  .navigation {
+    padding: 0.5rem 2rem; //
+    .logo {
+      p {
+        font-size: 1rem; //
+      }
+    }
+    .registration {
+      .registrationBtn {
+        font-size: 10px; //
+        border: 1px solid; //
+        padding: 12px; //
+        border-radius: 10px; //
+      }
+      .accessBtn {
+        font-size: 10px; //
+      }
+    }
+  }
+}

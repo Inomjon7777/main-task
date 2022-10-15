@@ -400,3 +400,30 @@
     }
   }
 }
+
+// RESPONSE 412PX
+@media (max-width: 412px) {
+  .hero {
+    .suptitle {
+      margin-top: 2rem; //
+    }
+    padding: 0.5rem 2.5rem; //
+
+    .banner-box {
+      .imagePersonBack,
+      .imagePersonFront,
+      .imagePersonLaptop {
+        display: none;
+      }
+
+      .imagePersonSide {
+        width: 350px; //
+      }
+
+      .toConnect {
+        right: 80px; //
+        bottom: 50px; //
+      }
+    }
+  }
+}

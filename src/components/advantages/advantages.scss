@@ -225,3 +225,20 @@
     }
   }
 }
+
+// RESPONSE 412 PX
+@media (max-width: 412px) {
+  .advantages {
+    .container {
+      padding: 0.5rem 2.5rem; //
+    }
+    &-boxes {
+      .banner {
+        img {
+          width: 350px; //
+          height: 350px; //
+        }
+      }
+    }
+  }
+}

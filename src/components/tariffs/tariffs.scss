@@ -403,3 +403,52 @@
     }
   }
 }
+
+// RESPONSIVE 500px
+@media (max-width: 500px) {
+  .tariffs {
+    .container {
+      padding: 0.5rem 2rem; //
+    }
+    .title-box {
+      & > h1 {
+        font-size: 1.9rem; //
+      }
+    }
+    .tariffs-boxes {
+      .start-box,
+      .standart-box,
+      .premium-box {
+        p {
+          font-size: 18px; //
+        }
+      }
+      .title-box {
+        img {
+          width: 100px; //
+          height: 100px; //
+        }
+        p {
+          &:first-child {
+            font-size: 2rem; //
+          }
+          &:last-child {
+            span {
+              &:first-child {
+                font-size: 25px; //
+              }
+              &:last-child {
+                font-size: 1.1rem; //
+                line-height: 45px; //
+              }
+            }
+          }
+        }
+      }
+      button {
+        width: 265px; //
+        font-size: 20px;
+      }
+    }
+  }
+}
