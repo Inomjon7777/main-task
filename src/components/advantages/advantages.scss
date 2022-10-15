@@ -196,3 +196,32 @@
     }
   }
 }
+
+// RESPONSE 500 PX
+@media (max-width: 500px) {
+  .advantages {
+    .container {
+      padding: 0.5rem 2.5rem; //
+    }
+    &-boxes {
+      .banner {
+        img {
+          width: 400px; //
+          height: 400px; //
+        }
+      }
+      .information {
+        text-align: center; //
+        h2 {
+          font-size: 30px; //
+        }
+        h3 {
+          font-size: 25px; //
+        }
+        p {
+          font-size: 1.2rem; //
+        }
+      }
+    }
+  }
+}

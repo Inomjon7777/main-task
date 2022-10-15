@@ -141,3 +141,19 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .navigation {
+    padding: 0.5rem 2.5rem; //
+    .logo {
+      p {
+        font-size: 1rem; //
+      }
+    }
+    .registration {
+      .registrationBtn {
+        font-size: 13px; //
+      }
+    }
+  }
+}

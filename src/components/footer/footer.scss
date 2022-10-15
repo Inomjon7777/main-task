@@ -138,3 +138,20 @@
     }
   }
 }
+
+// RESPONSIVE 500PX
+@media (max-width: 500px) {
+  .footer {
+    .container {
+      padding: 0.5rem 2.5rem;
+    }
+    .description {
+      font-size: 14px; //
+    }
+    .socialNetworks {
+      img {
+        padding: 5px; //
+      }
+    }
+  }
+}

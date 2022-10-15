@@ -342,3 +342,61 @@
     padding: 10px;
   }
 }
+
+// RESPONSE 500PX
+@media (max-width: 500px) {
+  .hero {
+    padding: 0.5rem 2.5rem; //
+    .suptitle {
+      font-size: 22px; //
+    }
+    .title {
+      line-height: 50px; //
+      font-size: 2.5rem; //
+    }
+    .subtitle {
+      line-height: 20px; //
+    }
+    .banner-box {
+      .imagePersonBack {
+        width: 400px; //
+        height: 280px; //
+        object-position: 0px 55%; //
+      }
+
+      .imagePersonSide {
+        width: 400px; //
+        height: 280px; //
+        object-position: 0px 10%; //
+      }
+
+      .imagePersonFront {
+        width: 400px; //
+        height: 280px; //
+        object-position: 0px 20%; //
+      }
+
+      .imagePersonLaptop {
+        width: 400px; //
+        height: 280px; //
+        object-position: 0px 30%; //
+      }
+      .toConnect {
+        position: absolute; //
+        right: 120px; //
+        bottom: 30px; //
+        padding: 5px 50px; //
+        border: 1px solid #888;
+      }
+    }
+    .banner-box {
+      position: relative; //
+      display: grid; //
+      grid-template-areas:
+        "myArea1"
+        "myArea2"
+        "myArea3"
+        "myArea4";
+    }
+  }
+}

@@ -163,3 +163,34 @@
     }
   }
 }
+
+// RESPONSIVE 500PX
+@media (max-width: 500px) {
+  .connection {
+    .container {
+      padding: 0.5rem 2.5rem; //
+    }
+    .title {
+      h1 {
+        font-size: 2rem; //
+      }
+    }
+    .connection-boxes {
+      display: grid; //
+      grid-template-columns: 1fr; //
+      .location-box,
+      .message-box,
+      .phone-box {
+        img {
+          padding: 20px; //
+        }
+        h3 {
+          font-size: 40px; //
+        }
+        p {
+          font-size: 18px; //
+        }
+      }
+    }
+  }
+}

@@ -353,3 +353,53 @@
     }
   }
 }
+
+// RESPONSIVE 500px
+@media (max-width: 500px) {
+  .tariffs {
+    .container {
+      padding: 0.5rem 2.5rem; //
+    }
+    .title-box {
+      & > h1 {
+        font-size: 2rem; //
+        line-height: 40px; //
+      }
+    }
+    .tariffs-boxes {
+      .start-box,
+      .standart-box,
+      .premium-box {
+        p {
+          font-size: 18px; //
+        }
+      }
+      .title-box {
+        img {
+          width: 100px; //
+          height: 100px; //
+        }
+        p {
+          &:first-child {
+            font-size: 2rem; //
+          }
+          &:last-child {
+            span {
+              &:first-child {
+                font-size: 25px; //
+              }
+              &:last-child {
+                font-size: 1.1rem; //
+                line-height: 45px; //
+              }
+            }
+          }
+        }
+      }
+      button {
+        width: 320px; //
+        font-size: 20px;
+      }
+    }
+  }
+}
