@@ -182,15 +182,15 @@
           font-size: 1.1rem; //
         }
       }
-      .social-networks-box {
-        gap: 15px; //
-      }
       h3 {
         font-size: 22px; //
       }
 
       .lines {
         gap: 10px; //
+        div {
+          width: 100px;
+        }
       }
       .nextBtn {
         font-size: 12px; //
