@@ -1,11 +1,5 @@
 import React from "react";
 
-import logo from "../../../assets/images/login/logo.jpg";
-
-import iconFacebook from "../../../assets/icons/login/facebook.svg";
-import iconApple from "../../../assets/icons/login/apple.svg";
-import iconGoogle from "../../../assets/icons/login/google.svg";
-
 import { Link } from "react-router-dom";
 import cubik from "../../../assets/images/congrutulation/cubik.jpg";
 

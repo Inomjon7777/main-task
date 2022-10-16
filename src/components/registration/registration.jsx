@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import logo from "../../assets/images/login/logo.jpg";
 
@@ -8,7 +8,6 @@ import iconGoogle from "../../assets/icons/login/google.svg";
 
 import "./registration.scss";
 import { Link } from "react-router-dom";
-import PasswordSection from "./confirmationCode/confirmationCode";
 
 const Registration = () => {
   return (
