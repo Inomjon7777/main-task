@@ -10,7 +10,7 @@ import "./tariffs.scss";
 
 const Tariffs = () => {
   return (
-    <div className="tariffs">
+    <div className="tariffs" id="tariffs">
       <div className="container">
         <div className="title-box">
           <h1>
@@ -58,11 +58,12 @@ const Tariffs = () => {
               <div>
                 <img src={standartImage} alt="Image not found" />
               </div>
-              <div>
-                <p>Standart</p>
+              <div className="standart-box-title">
+                <p className="text-popular">Ommabop</p>
+                <p className="tariff-name">Standart</p>
                 <p>
-                  <span>135 000</span>
-                  <span> (15) uchrashuv</span>
+                  <span className="standart-box-big-price ">135 000</span>
+                  <span className="allCountMeeting"> (15) uchrashuv</span>
                 </p>
               </div>
             </div>

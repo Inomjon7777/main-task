@@ -15,7 +15,7 @@ import "./hero.scss";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
       <div className="title-box">
         <p className="suptitle">Video konferensiya</p>
         <h1 className="title">

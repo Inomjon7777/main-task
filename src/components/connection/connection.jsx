@@ -8,7 +8,7 @@ import "./connection.scss";
 
 const Connection = () => {
   return (
-    <div className="connection">
+    <div className="connection" id="connection">
       <div className="container">
         <div className="title">
           <h1>
@@ -22,7 +22,7 @@ const Connection = () => {
           <div className="location-box">
             <img src={iconEnvelope} alt="Icon not found" />
             <h3>Manzil</h3>
-            <p>
+            <p className="breakAddress">
               Toshkent sh., Yunusobod t., Amir <br /> Temur shox ko’chasi, 107 B
               uy
             </p>

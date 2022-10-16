@@ -395,6 +395,14 @@
   }
 }
 
+@media (max-width: 665px) {
+  .hero {
+    .title {
+      line-height: 40px;
+    }
+  }
+}
+
 // RESPONSE 600PX
 @media (max-width: 600px) {
   .hero {

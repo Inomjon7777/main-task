@@ -87,8 +87,10 @@
       .message-box,
       .phone-box {
         padding: 49px 86px;
-        br {
-          display: none;
+        .breakAddress {
+          br {
+            display: none;
+          }
         }
       }
     }

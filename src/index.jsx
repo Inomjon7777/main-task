@@ -10,6 +10,7 @@ import Registration from "./components/registration/registration";
 import Login from "./components/login/login";
 import ConfirmationCode from "./components/registration/confirmationCode/confirmationCode";
 import Congratulation from "./components/registration/congratulationCode/congratulation";
+import Opportunities from "./components/opportunities/opportunities";
 
 ReactDOM.render(
   <BrowserRouter>

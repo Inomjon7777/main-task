@@ -14,7 +14,7 @@ import "./opportunities.scss";
 
 const Opportunities = () => {
   return (
-    <div className="opportunities">
+    <div className="opportunities" id="opportunities">
       <div className="container">
         <div className="title-box">
           <div className="title">

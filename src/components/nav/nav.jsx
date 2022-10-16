@@ -15,11 +15,23 @@ const Nav = () => {
       </div>
       <div className="navbar">
         <ul>
-          <li>Bosh sahifa</li>
-          <li>Imkoniyatlar</li>
-          <li>Afzalliklar</li>
-          <li>Tariflar</li>
-          <li>Aloqa</li>
+          <li>
+            <a href="#hero"> Bosh sahifa</a>
+          </li>
+
+          <li>
+            <a href="#opportunities">Imkoniyatlar </a>
+          </li>
+
+          <li>
+            <a href="#advantages">Afzalliklar</a>
+          </li>
+          <li>
+            <a href="#tariffs"> Tariflar</a>
+          </li>
+          <li>
+            <a href="#connection">Aloqa</a>
+          </li>
         </ul>
       </div>
       <div className="registration">

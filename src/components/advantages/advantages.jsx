@@ -6,7 +6,7 @@ import persons from "../../assets/images/advantages/persons.jpg";
 
 const Advantages = () => {
   return (
-    <div className="advantages">
+    <div className="advantages" id="advantages">
       <div className="container">
         <div className="advantages-boxes">
           <div className="banner">

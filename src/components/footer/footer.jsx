@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../../assets/images/nav/logo.jpg";
+import logoOrg from "../../assets/icons/footer/logo.svg";
 import iconInstagram from "../../assets/icons/footer/2561453_instagram_icon 1.svg";
 import iconTwitter from "../../assets/icons/footer/Vector(1).svg";
 import iconFacebook from "../../assets/icons/footer/Vector.svg";
@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="title">
-          <img src={logo} alt="Icon not found" />
+          <img src={logoOrg} alt="Icon not found" />
           <span>iMeetings</span>
         </div>
         <div className="description">

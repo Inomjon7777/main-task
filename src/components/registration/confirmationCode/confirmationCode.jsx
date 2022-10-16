@@ -1,20 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import logo from "../../../assets/images/login/logo.jpg";
-
 import iconFacebook from "../../../assets/icons/login/facebook.svg";
 import iconApple from "../../../assets/icons/login/apple.svg";
 import iconGoogle from "../../../assets/icons/login/google.svg";
 
-import { Link } from "react-router-dom";
-import PasswordSection from "./confirmationCode";
-
 import "./confirmationCode.scss";
+import { getPadTime } from "./../../../helpers/getPadTime";
 
 const ConfirmationCode = () => {
+  const [timeLeft, setTimeLeft] = useState(1 * 60);
+
+  const minutes = getPadTime(Math.floor(timeLeft / 60));
+  const seconds = getPadTime(timeLeft - minutes * 60);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeLeft((timeLeft) => (timeLeft >= 1 ? timeLeft - 1 : 0));
+    }, 1000);
+  }, []);
+
   return (
-    <div className="registration-page">
-      <div className="registration-box">
+    <div className="confirmation-code-page">
+      <div className="confirmation-code-box">
         <div className="title-box">
           <img src={logo} alt="Image not found" />
           <span>iMeetings</span>
@@ -39,18 +48,22 @@ const ConfirmationCode = () => {
           </Link>
         </div>
         <form>
-          <div className="phoneNumberBox">
+          <div className="confirmationCodeBox">
             <p>Tasdiqlash kodi</p>
-            <div className="phoneNumberBoxMain">
+            <div className="confirmationCodeBoxMain">
               <input type="text" placeholder="1 2 3 4 5 6" />
-              kod kelmadi
+              <span> kod kelmadi</span>
             </div>
-            <p>00:55</p>
           </div>
         </form>
-        <Link to={"/congratulation"}>
-          <button className="nextBtn">Keyingi</button>
-        </Link>
+        <div className="nextButtonBox">
+          <p>
+            {minutes}:{seconds}
+          </p>
+          <Link to={"/congratulation"}>
+            <button className="nextBtn">Keyingi</button>
+          </Link>
+        </div>
       </div>
       <p>Copyright © 2022. REALSOFT. Barcha huquqlar himoyalangan</p>
     </div>
