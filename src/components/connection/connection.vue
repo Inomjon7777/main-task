@@ -1,0 +1,285 @@
+<template>
+  <div class="connection" id="connection">
+    <div class="container">
+      <div class="title">
+        <h1>Biz <span>bilan</span> bog‘lanish</h1>
+        <p>
+          Har bir mijozimiz uchun doimiy texnik ko‘mak berish tashkil etilgan
+        </p>
+      </div>
+      <div class="connection-boxes">
+        <div class="location-box">
+          <img :src="iconEnvelope" alt="Icon not found" />
+          <h3>Manzil</h3>
+          <p class="breakAddress">
+            Toshkent sh., Yunusobod t., Amir <br />
+            Temur shox ko’chasi, 107 B uy
+          </p>
+        </div>
+        <div class="message-box">
+          <img :src="iconMarker" alt="Icon not found" />
+          <h3>Elektron pochta</h3>
+          <p>
+            info@realsoft.uz <br />
+            realsoft@exat.uz
+          </p>
+        </div>
+        <div class="phone-box">
+          <img :src="iconCall" alt="Icon not found" />
+          <h3>Telefonlar</h3>
+          <p>
+            +998 71 205-84-84 <br />
+            +998 99 150-84-84
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+// images
+import iconCall from "../../assets/icons/connections/call.svg";
+import iconEnvelope from "../../assets/icons/connections/envelope.svg";
+import iconMarker from "../../assets/icons/connections/marker.svg";
+export default {
+  data() {
+    return {
+      iconCall,
+      iconEnvelope,
+      iconMarker,
+    };
+  },
+};
+</script>
+
+<style lang="scss">
+.connection {
+  background: #fff;
+  display: grid;
+  place-items: center;
+  padding: 5rem 0;
+  .title {
+    text-align: center;
+    h1 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 45px;
+      color: #000000;
+      span {
+        background: linear-gradient(89.89deg, #3434ff 0.07%, #f42d2d 27.2%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: rgba(0, 0, 0, 0.54);
+    }
+  }
+
+  .connection-boxes {
+    margin-top: 44px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 22px;
+    .location-box,
+    .message-box,
+    .phone-box {
+      padding: 49px 71px;
+      border: 1px solid #eef1f4;
+      border-radius: 10px;
+    }
+    img {
+      background: #0066ff;
+      padding: 28px;
+      border-radius: 50%;
+    }
+    h3 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: #19191b;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #696871;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .connection {
+    .container {
+      padding: 0rem 4rem;
+    }
+    .connection-boxes {
+      .location-box,
+      .message-box,
+      .phone-box {
+        padding: 49px 86px;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .connection {
+    .container {
+      padding: 0rem 4rem;
+    }
+    .connection-boxes {
+      .location-box,
+      .message-box,
+      .phone-box {
+        padding: 49px 86px;
+        .breakAddress {
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .connection {
+    padding: 0rem 0rem 3rem 0rem;
+    .container {
+      padding: 5rem;
+    }
+
+    .title {
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .connection-boxes {
+      .location-box,
+      .message-box,
+      .phone-box {
+        padding: 40px 60px;
+      }
+      img {
+        padding: 25px;
+      }
+      p {
+        br {
+        }
+      }
+      .location-box {
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .connection {
+    padding-top: 2rem;
+    .container {
+      padding: 0 3rem;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .connection {
+    .container {
+      padding: 0 3rem; //
+    }
+    .title {
+      h1 {
+        font-size: 40px; //
+        line-height: 20px; //
+        padding-top: 4rem; //
+      }
+    }
+
+    .connection-boxes {
+      display: grid; //
+      grid-template-columns: repeat(2, 1fr); //
+      grid-template-rows: repeat(2, 1fr); //
+    }
+  }
+}
+@media (max-width: 700px) {
+  .connection {
+    .connection-boxes {
+      .location-box,
+      .message-box,
+      .phone-box {
+        padding: 20px; //
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .connection {
+    .title {
+      p {
+        font-size: 20px; //
+      }
+    }
+    .connection-boxes {
+      display: grid; //
+      grid-template-columns: 1fr; //
+      .location-box,
+      .message-box,
+      .phone-box {
+        h3 {
+          font-size: 45px; //
+        }
+        p {
+          font-size: 20px; //
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .connection {
+    .container {
+      padding: 0.5rem 2.5rem; //
+    }
+    .title {
+      h1 {
+        font-size: 2rem; //
+      }
+    }
+    .connection-boxes {
+      display: grid; //
+      grid-template-columns: 1fr; //
+      .location-box,
+      .message-box,
+      .phone-box {
+        img {
+          padding: 20px; //
+        }
+        h3 {
+          font-size: 40px; //
+        }
+        p {
+          font-size: 18px; //
+        }
+      }
+    }
+  }
+}
+</style>
