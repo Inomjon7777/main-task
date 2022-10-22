@@ -1,29 +1,13 @@
 <template>
-  <nav>
-    <nav />
-  </nav>
+  <nav />
   <router-view />
 </template>
 
 <script>
-import Nav from "./components/nav/nav.vue";
-import Hero from "./components/hero/hero.vue";
-import Opportunities from "./components/opportunities/opportunities.vue";
-import Advantages from "./components/advantages/advantages.vue";
-import Tariffs from "./components/tariffs/tariffs.vue";
-import Connection from "./components/connection/connection.vue";
-import Footer from "./components/footer/footer.vue";
-import Login from "./components/login/login.vue";
+import nav from "./components/nav/nav.vue";
 export default {
   components: {
-    Nav,
-    Hero,
-    Opportunities,
-    Advantages,
-    Tariffs,
-    Connection,
-    Footer,
-    Login,
+    nav,
   },
 };
 </script>

@@ -65,7 +65,8 @@ export default {
   padding: 5px 11rem;
   background: #fff;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
-
+  position: sticky;
+  top: 0;
   z-index: 1000;
 
   .navbar ul {

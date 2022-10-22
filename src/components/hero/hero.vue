@@ -1,5 +1,5 @@
 <template>
-  <Nav />
+  <navigation />
   <div class="hero" id="hero">
     <div class="title-box">
       <p class="suptitle">Video konferensiya</p>
@@ -63,7 +63,7 @@
   <advantages />
   <tariffs />
   <connection />
-  <Footer />
+  <foot />
 </template>
 
 <script>
@@ -77,15 +77,23 @@ import imagePersonLaptop from "../../assets/images/hero/person-from-laptop.jpg";
 import connectWithPhone from "../../assets/icons/hero/Frame(1).svg";
 import recordVideoIcon from "../../assets/icons/hero/Frame(2).svg";
 import recordVoiceIcon from "../../assets/icons/hero/Frame(3).svg";
+//components
+import navigation from "../nav/nav.vue";
 import opportunities from "../opportunities/opportunities.vue";
-import Advantages from "../advantages/advantages.vue";
-import Tariffs from "../tariffs/tariffs.vue";
-import Connection from "../connection/connection.vue";
-import Footer from "../footer/footer.vue";
-import Nav from "../nav/nav.vue";
+import advantages from "../advantages/advantages.vue";
+import tariffs from "../tariffs/tariffs.vue";
+import connection from "../connection/connection.vue";
+import foot from "../footer/footer.vue";
 
 export default {
-  components: { opportunities, Advantages, Tariffs, Connection, Footer, Nav },
+  components: {
+    navigation,
+    opportunities,
+    advantages,
+    tariffs,
+    connection,
+    foot,
+  },
   data() {
     return {
       // images
