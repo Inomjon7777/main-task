@@ -31,9 +31,12 @@
           <input type="text" placeholder="1 2 3 4 5 6" />
         </div>
       </form>
-      <router-link to="/hero">
-        <button class="nextBtn">Keyingi</button>
-      </router-link>
+      <div>
+        <router-link to="/">
+          <button class="nextBtn">Keyingi</button>
+        </router-link>
+      </div>
+      <router-view></router-view>
     </div>
     <p>Copyright © 2022. REALSOFT. Barcha huquqlar himoyalangan</p>
   </div>

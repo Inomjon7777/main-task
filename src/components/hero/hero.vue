@@ -1,5 +1,4 @@
 <template>
-  <navigation />
   <div class="hero" id="hero">
     <div class="title-box">
       <p class="suptitle">Video konferensiya</p>

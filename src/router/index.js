@@ -7,7 +7,7 @@ import Congratulation from "../components/registration/congratulationCode/congra
 
 const routes = [
   {
-    path: "/hero",
+    path: "/",
     component: Hero,
   },
   {

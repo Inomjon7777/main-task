@@ -4,9 +4,12 @@
       <img :src="cubik" alt="Image not found" />
       <h3>Tabriklaymiz</h3>
       <p>Siz muvaffaqiyatli ro’yxatdan o’tdingiz</p>
-      <router-link to="/hero">
-        <button>Yopish</button>
-      </router-link>
+      <div>
+        <router-link to="/">
+          <button>Yopish</button>
+        </router-link>
+      </div>
+      <router-view></router-view>
     </div>
     <p>Copyright © 2022. REALSOFT. Barcha huquqlar himoyalangan</p>
   </div>

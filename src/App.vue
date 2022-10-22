@@ -1,13 +1,17 @@
 <template>
-  <nav />
+  <navigation>
+    <hero />
+  </navigation>
   <router-view />
 </template>
 
 <script>
-import nav from "./components/nav/nav.vue";
+import hero from "./components/hero/hero.vue";
+import navigation from "./components/nav/nav.vue";
 export default {
   components: {
-    nav,
+    navigation,
+    hero,
   },
 };
 </script>
