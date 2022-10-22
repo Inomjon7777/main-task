@@ -63,7 +63,7 @@
   <advantages />
   <tariffs />
   <connection />
-  <foot />
+  <foott />
 </template>
 
 <script>
@@ -83,7 +83,7 @@ import opportunities from "../opportunities/opportunities.vue";
 import advantages from "../advantages/advantages.vue";
 import tariffs from "../tariffs/tariffs.vue";
 import connection from "../connection/connection.vue";
-import foot from "../footer/footer.vue";
+import foott from "../footer/footer.vue";
 
 export default {
   components: {
@@ -92,7 +92,7 @@ export default {
     advantages,
     tariffs,
     connection,
-    foot,
+    foott,
   },
   data() {
     return {
