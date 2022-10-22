@@ -1,0 +1,254 @@
+<template>
+  <div class="navigation">
+    <div class="logo">
+      <img :src="logo" alt="Icon not found" />
+      <p>iMeetings</p>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="#hero"> Bosh sahifa</a>
+        </li>
+
+        <li>
+          <a href="#opportunities">Imkoniyatlar </a>
+        </li>
+
+        <li>
+          <a href="#advantages">Afzalliklar</a>
+        </li>
+        <li>
+          <a href="#tariffs"> Tariflar</a>
+        </li>
+        <li>
+          <a href="#connection">Aloqa</a>
+        </li>
+      </ul>
+    </div>
+    <router-view>
+      <div class="registration">
+        <router-link to="/registration">
+          <button class="registrationBtn">Ro‘yxatdan o’tish</button>
+        </router-link>
+
+        <router-link to="/login">
+          <button class="accessBtn">
+            <img :src="loginIcon" alt="Icon not found" />
+            Kirish
+          </button>
+        </router-link>
+      </div>
+    </router-view>
+  </div>
+</template>
+
+<script>
+import logo from "../../assets/images/nav/logo.jpg";
+import loginIcon from "../../assets/icons/nav/login-icon.svg";
+
+export default {
+  data() {
+    return {
+      // images
+      logo,
+      loginIcon,
+    };
+  },
+};
+</script>
+
+<style lang="scss">
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 11rem;
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+
+  z-index: 1000;
+
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 28px;
+    li {
+      cursor: pointer;
+      &:first-child {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000;
+        text-shadow: 0px 0px 7px rgba(0, 102, 255, 0.11);
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+      &:not(:first-child) {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #686d74;
+      }
+    }
+  }
+
+  .logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: #041429;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-left: 9.2px;
+    }
+  }
+  .registration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .registrationBtn {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #000;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+    .accessBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 19.5px;
+      background: #0066ff;
+      border: 1px solid #0066ff;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      gap: 6px;
+      margin-left: 25px;
+      transition: all 0.5s ease;
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .navigation {
+    padding: 0rem 4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navigation {
+    padding: 0rem 5rem;
+
+    .navbar ul {
+      gap: 25px;
+    }
+
+    .registration {
+      .accessBtn {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .navigation {
+    padding: 0rem 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navigation {
+    padding: 5px 3rem;
+
+    .navbar ul {
+      gap: 18px;
+      li {
+        &:first-child {
+          font-size: 13px;
+        }
+        &:not(:first-child) {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .logo {
+      p {
+        font-size: 1.1rem;
+        margin-left: 9px;
+      }
+    }
+    .registration {
+      .registrationBtn {
+        font-size: 14px;
+      }
+      .accessBtn {
+        padding: 8px 15px;
+        margin-left: 13px;
+      }
+    }
+  }
+}
+
+// RESPONSE 800PX
+@media (max-width: 800px) {
+  .navigation {
+    .navbar ul {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .navigation {
+    padding: 0.5rem 2.5rem; //
+    .logo {
+      p {
+        font-size: 1rem; //
+      }
+    }
+    .registration {
+      .registrationBtn {
+        font-size: 13px; //
+      }
+    }
+  }
+}
+
+// MAX-WIDTH 412PX
+@media (max-width: 412px) {
+  .navigation {
+    padding: 0.5rem 2rem; //
+    .logo {
+      p {
+        font-size: 1rem; //
+      }
+    }
+    .registration {
+      .registrationBtn {
+        font-size: 10px; //
+        border: 1px solid; //
+        padding: 12px; //
+        border-radius: 10px; //
+      }
+      .accessBtn {
+        font-size: 10px; //
+      }
+    }
+  }
+}
+</style>
