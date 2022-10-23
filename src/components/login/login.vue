@@ -53,6 +53,7 @@ export default {
   align-items: center;
   flex-direction: column;
   background: linear-gradient(to top, #fff 60%, #0eb2b3 40%);
+  height: 100vh;
 }
 .login-box {
   display: flex;
