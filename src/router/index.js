@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import header from "../components/header/header.vue";
 import login from "../components/login/login.vue";
-import secretCode from "../components/secret-code/secret-code.vue";
+import verification from "../components/verification/verification.vue";
 import main from "../components/main/main.vue";
 const routes = [
   {
@@ -13,8 +13,8 @@ const routes = [
     component: login,
   },
   {
-    path: "/secret-code",
-    component: secretCode,
+    path: "/verification",
+    component: verification,
   },
   {
     path: "/main",

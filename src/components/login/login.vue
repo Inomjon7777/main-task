@@ -17,7 +17,7 @@
             placeholder="   +998   Telefon raqamingiz"
           />
         </div>
-        <router-link to="/secret-code">
+        <router-link to="/verification">
           <button class="access-button">KIRISH</button>
         </router-link>
       </form>
@@ -38,6 +38,7 @@ import phone from "../../assets/icons/login/phone.svg";
 import googlePlay from "../../assets/images/login/google-play.png";
 import appStore from "../../assets/images/login/app-store.png";
 import technicalService from "../technical-service/technical-service.vue";
+import verification from "../verification/verification.vue";
 export default {
   components: { technicalService },
   data() {

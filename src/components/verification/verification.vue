@@ -1,6 +1,6 @@
 <template>
-  <div class="secret-code">
-    secret-code page
+  <div class="verification">
+    verification
 
     <router-link to="/main"> <button>Tasdiqlash</button> </router-link>
   </div>
