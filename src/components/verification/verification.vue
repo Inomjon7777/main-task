@@ -14,36 +14,52 @@
       <p class="text-warning">
         Akkountingiz xavfsizligi uchun ushbu kodni hech kimga bermang!
       </p>
+      <div class="phone-box">
+        <input
+          class="phoneInput"
+          type="text"
+          placeholder="Maxfiy kodni kiriting"
+        />
+      </div>
+      <p class="timer">00:47</p>
+      <div class="refresh-box">
+        <img class="refresh" :src="refresh" alt="refresh" />
+        <span class="text-send-code-repeat">Kodni qayta jo'natish</span>
+      </div>
+      <div class="device-reliable">
+        <input type="checkbox" />
+        <span>Qurilma ishonchlimi ?</span>
+      </div>
+      <p>
+        Ushbu uskunaga ishonch bildirib, barcha keyingi kirishlardan <br />
+        SMS-tasdiqlovsiz PIN-kod orqali foydalanish imkoni paydo bo‘ladi
+      </p>
       <form>
-        <div class="phone-box">
-          <input
-            class="phoneInput"
-            type="text"
-            placeholder="Maxfiy kodni kiriting"
-          />
-        </div>
-        <p class="timer">00:47</p>
+        <router-link to="/login">
+          <button class="back-button">Orqaga</button>
+        </router-link>
         <router-link to="/main">
           <button class="access-button">Tasdiqlash</button>
         </router-link>
       </form>
-      <p class="subtitle">
-        Playmarket yoki AppStore orqali mobil <br />ilovani o‘rnating
-      </p>
     </div>
     <technicalService />
   </div>
 </template>
 <script>
+//images
 import logo from "../../assets/icons/verification/logo.svg";
+import refresh from "../../assets/icons/verification/refresh.svg";
+// components
 import technicalService from "../technical-service/technical-service.vue";
 export default {
   components: { technicalService },
   data() {
-    return { logo };
+    return { logo, refresh };
   },
 };
 </script>
+
 <style scoped>
 .verification {
   display: flex;
@@ -113,39 +129,7 @@ form {
   background: #fff;
   color: #0eb2b3;
 }
-.phone-box {
-  display: flex;
-  align-items: center;
-  justify-self: start;
-  width: 92%;
-  border: 1px solid #d5e3ed;
-  border-radius: 5px;
-  padding: 14px;
-  margin-top: 28px;
-}
-.phoneInput {
-  border: none;
-  outline: none;
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #9597a8;
-}
-.subtitle {
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-  color: #000000;
-  margin-top: 60px;
-}
-.apps {
-  margin-top: 16px;
-  display: flex;
-  gap: 14px;
-}
+
 .text-warning {
   font-family: "SF Pro Display";
   font-style: normal;
