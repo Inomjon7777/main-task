@@ -50,4 +50,7 @@ export default {
   gap: 20px;
   padding-bottom: 40px;
 }
+img {
+  width: 270px;
+}
 </style>
