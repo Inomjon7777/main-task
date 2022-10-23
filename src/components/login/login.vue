@@ -9,12 +9,20 @@
       </div>
       <h3 class="title">Kirish yoki ro'yxatdan<br />o'tish</h3>
       <form>
-        <img :src="phone" alt="phone" />
-        <input type="text" placeholder="+998 Telefon raqamingiz" />
-        <router-link to="/secret-code"> <button>kirish</button> </router-link>
+        <div class="phone-box">
+          <img :src="phone" alt="phone" />
+          <input
+            class="phoneInput"
+            type="text"
+            placeholder="   +998   Telefon raqamingiz"
+          />
+        </div>
+        <router-link to="/secret-code">
+          <button class="access-button">KIRISH</button>
+        </router-link>
       </form>
       <p class="subtitle">
-        Playmarket yoki AppStore orqali mobil ilovani o‘rnating
+        Playmarket yoki AppStore orqali mobil <br />ilovani o‘rnating
       </p>
       <div class="apps">
         <img :src="googlePlay" alt="google-play" />
@@ -39,9 +47,10 @@ export default {
 </script>
 <style scoped>
 .login {
-  height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: linear-gradient(to top, #fff 60%, #0eb2b3 40%);
 }
 .login-box {
@@ -53,7 +62,9 @@ export default {
   border: 1px solid #f3f3f3;
   box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 35px 45px;
+  padding: 35px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 .logo-box {
   display: flex;
@@ -75,5 +86,63 @@ export default {
   text-align: center;
   color: #000000;
   margin-top: 28px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.access-button {
+  background: #0eb2b3;
+  color: #fff;
+  border-radius: 5px;
+  padding: 14px 167px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  border: 1px solid #0eb2b3;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-top: 15px;
+}
+.access-button:hover {
+  background: #fff;
+  color: #0eb2b3;
+}
+.phone-box {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  width: 92%;
+  border: 1px solid #d5e3ed;
+  border-radius: 5px;
+  padding: 14px;
+  margin-top: 28px;
+}
+.phoneInput {
+  border: none;
+  outline: none;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #9597a8;
+}
+.subtitle {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #000000;
+  margin-top: 60px;
+}
+.apps {
+  margin-top: 16px;
+  display: flex;
+  gap: 14px;
 }
 </style>

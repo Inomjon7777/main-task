@@ -34,6 +34,8 @@ export default {};
   color: #001f31;
   margin: 0;
   padding: 0;
+  margin-top: 4px;
+  margin-bottom: 6px;
 }
 .subtitle {
   font-family: "SF Pro Display";
