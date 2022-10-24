@@ -2,7 +2,6 @@
   <nav></nav>
   <router-view />
 </template>
-
 <style>
 * {
   margin: 0;

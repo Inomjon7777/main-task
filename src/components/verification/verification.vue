@@ -36,7 +36,7 @@
         <router-link to="/login">
           <button class="back-button">Orqaga</button>
         </router-link>
-        <router-link to="/main">
+        <router-link to="/sidebar">
           <button class="access-button">Tasdiqlash</button>
         </router-link>
       </div>

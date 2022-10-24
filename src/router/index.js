@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import header from "../components/header/header.vue";
 import login from "../components/login/login.vue";
 import verification from "../components/verification/verification.vue";
-import main from "../components/main/main.vue";
+import sidebar from "../components/sidebar/sidebar.vue";
 const routes = [
   {
     path: "/",
@@ -17,8 +17,8 @@ const routes = [
     component: verification,
   },
   {
-    path: "/main",
-    component: main,
+    path: "/sidebar",
+    component: sidebar,
   },
 ];
 
