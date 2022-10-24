@@ -14,7 +14,7 @@
           <input
             class="phoneInput"
             type="text"
-            placeholder="   +998   Telefon raqamingiz"
+            placeholder="+998  Telefon raqamingiz"
           />
         </div>
         <router-link to="/verification">
@@ -25,8 +25,12 @@
         Playmarket yoki AppStore orqali mobil <br />ilovani o‘rnating
       </p>
       <div class="apps">
-        <img :src="googlePlay" alt="google-play" />
-        <img :src="appStore" alt="app-store" />
+        <a href="https://play.google.com/store/games?hl=ru&gl=US">
+          <img class="google-play" :src="googlePlay" alt="google-play" />
+        </a>
+        <a href="https://www.apple.com/ru/app-store/">
+          <img class="app-store" :src="appStore" alt="app-store" />
+        </a>
       </div>
     </div>
     <technicalService />
@@ -38,7 +42,6 @@ import phone from "../../assets/icons/login/phone.svg";
 import googlePlay from "../../assets/images/login/google-play.png";
 import appStore from "../../assets/images/login/app-store.png";
 import technicalService from "../technical-service/technical-service.vue";
-import verification from "../verification/verification.vue";
 export default {
   components: { technicalService },
   data() {
@@ -64,9 +67,9 @@ export default {
   border: 1px solid #f3f3f3;
   box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 35px;
+  padding: 30px;
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .logo-box {
   display: flex;
@@ -132,6 +135,7 @@ form {
   font-weight: 400;
   font-size: 16px;
   color: #9597a8;
+  padding: 0 20px;
 }
 .subtitle {
   font-family: "SF Pro Display";
@@ -145,6 +149,10 @@ form {
 .apps {
   margin-top: 16px;
   display: flex;
-  gap: 14px;
+  gap: 15px;
+}
+.google-play,
+.app-store {
+  width: 185px;
 }
 </style>

@@ -77,16 +77,17 @@ export default {
   border: 1px solid #f3f3f3;
   box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 32px 35px;
+  padding: 25px 30px;
   margin-top: 50px;
-  margin-bottom: 40px;
-  width: 389px;
+  margin-bottom: 33px;
+  width: 380px;
 }
 .logo-box {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6px;
+  cursor: pointer;
 }
 .website-name {
   font-size: 1.5rem;
@@ -107,7 +108,7 @@ export default {
 .access-button,
 .back-button {
   border-radius: 5px;
-  padding: 14px 60px;
+  padding: 14px 62px;
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
@@ -159,6 +160,7 @@ export default {
   border: 1px solid #d5e3ed;
   border-radius: 5px;
   margin-top: 20px;
+  outline: none;
 }
 .timer {
   font-family: "SF Pro Display";
@@ -177,7 +179,7 @@ export default {
   margin-top: 20px;
 }
 .device-reliable {
-  margin-top: 60px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,6 +189,10 @@ export default {
   background: #ffffff;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
+  cursor: pointer;
+}
+.refresh {
+  cursor: pointer;
 }
 .subtitle {
   font-family: "SF Pro Display";

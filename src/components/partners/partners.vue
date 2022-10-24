@@ -3,10 +3,18 @@
     <div class="container">
       <h2 class="title">Hamkorlar</h2>
       <div class="banks">
-        <img class="asakabank" :src="asakabank" alt="asakabank" />
-        <img class="sqb" :src="sqb" alt="sqb" />
-        <img class="agrobank" :src="agrobank" alt="agrobank" />
-        <img class="hamkorbank" :src="hamkorbank" alt="hamkorbank" />
+        <a href="https://www.asakabank.uz/uz/physical-persons/home">
+          <img class="asakabank" :src="asakabank" alt="asakabank" />
+        </a>
+        <a href="https://sqb.uz/uz/">
+          <img class="sqb" :src="sqb" alt="sqb" />
+        </a>
+        <a href="https://agrobank.uz/uz/person">
+          <img class="agrobank" :src="agrobank" alt="agrobank" />
+        </a>
+        <a href="https://hamkorbank.uz/uz/">
+          <img class="hamkorbank" :src="hamkorbank" alt="hamkorbank" />
+        </a>
       </div>
     </div>
   </div>

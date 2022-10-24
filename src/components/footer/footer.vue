@@ -28,9 +28,15 @@
           <li>Ekologik siyosat</li>
         </ul>
         <div class="social-networks">
-          <img class="telegram" :src="telegram" alt="telegram" />
-          <img class="facebook" :src="facebook" alt="facebook" />
-          <img class="instagram" :src="instagram" alt="instagram" />
+          <a href="https://desktop.telegram.org/">
+            <img class="telegram" :src="telegram" alt="telegram" />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img class="facebook" :src="facebook" alt="facebook" />
+          </a>
+          <a href="https://www.instagram.com/">
+            <img class="instagram" :src="instagram" alt="instagram" />
+          </a>
         </div>
       </div>
     </div>
@@ -42,7 +48,10 @@
           @ RealSoft 2022. Barcha huquqlar himoyalangan
         </p>
         <p class="website-creator">
-          Sayt yaratuvchisi: <span class="realsoft">REALSOFT</span>
+          Sayt yaratuvchisi:
+          <span class="realsoft">
+            <a class="realsoft-link" href="https://realsoft.uz/">REALSOFT</a>
+          </span>
         </p>
       </div>
     </div>
@@ -145,10 +154,13 @@ export default {
   font-size: 14px;
   color: #6b7d87;
 }
-.realsoft {
+.realsoft-link {
   color: #2979ff;
   font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
+}
+.logo-box {
   cursor: pointer;
 }
 </style>

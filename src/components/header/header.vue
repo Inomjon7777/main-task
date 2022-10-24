@@ -14,8 +14,12 @@
           </p>
           <p class="subtitle">Bizning ilovani ko’chirib oling 👇</p>
           <div class="apps">
-            <img class="playStore" :src="PlayStore" alt="PlayStore" />
-            <img class="appStore" :src="AppStore" alt="AppStore" />
+            <a href="https://play.google.com/store/games">
+              <img class="playStore" :src="PlayStore" alt="PlayStore" />
+            </a>
+            <a href="https://www.apple.com/ru/app-store/">
+              <img class="appStore" :src="AppStore" alt="AppStore" />
+            </a>
           </div>
           <img class="shape" :src="Shape" alt="sun-background" />
         </div>
@@ -92,6 +96,7 @@ export default {
   display: flex;
   gap: 14px;
 }
+
 .banner-image {
   width: 520px;
   height: 590px;
@@ -107,7 +112,7 @@ export default {
   left: 0;
   bottom: 0;
   height: 400px;
-  width: 400px;
+  width: 180px;
 }
 .playStore,
 .appStore {

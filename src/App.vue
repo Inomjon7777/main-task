@@ -1,6 +1,5 @@
 <template>
-  <nav>
-  </nav>
+  <nav></nav>
   <router-view />
 </template>
 
@@ -16,5 +15,14 @@
 
 .container {
   padding: 0 12rem;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/gilroy/Gilroy-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SFProDisplay/SFProDisplay-Medium.woff")
+    format("woff");
 }
 </style>
