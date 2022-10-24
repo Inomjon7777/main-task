@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>main page</h1>
+  <div class="transfers" id="transfers">
+    <h1>o'tkazmalar bo'limi</h1>
   </div>
 </template>
 <script>

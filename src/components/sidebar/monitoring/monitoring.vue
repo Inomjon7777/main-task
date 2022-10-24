@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>main page</h1>
+  <div class="monitoring">
+    <h1>monitoring bo'limi</h1>
   </div>
 </template>
 <script>

@@ -11,53 +11,76 @@
     </div>
     <ul class="sections-box">
       <p class="sidebar-title">BOSHQARUV PANELI</p>
-      <li>
-        <a href="#" class="sections-item">
-          <img :src="iconHome" alt="icon-home" class="icon-home" />
-          Asosiy</a
-        >
-      </li>
 
-      <li>
-        <a href="#" class="sections-item">
-          <img
-            :src="iconTransfers"
-            alt="icon-transfers"
-            class="icon-transfers"
-          />
-          O'tkazmalar</a
-        >
-      </li>
+      <router-link to="/main-page">
+        <li>
+          <a href="#" class="sections-item">
+            <img :src="iconHome" alt="icon-home" class="icon-home" />
+            Asosiy</a
+          >
+        </li>
+      </router-link>
 
-      <li>
-        <a href="#" class="sections-item">
-          <img :src="iconWallet" alt="icon-wallet" class="icon-wallet" />
-          To'lovlar</a
-        >
-      </li>
+      <router-link to="/transfers-page">
+        <li>
+          <a href="#" class="sections-item">
+            <img
+              :src="iconTransfers"
+              alt="icon-transfers"
+              class="icon-transfers"
+            />
+            O'tkazmalar</a
+          >
+        </li>
+      </router-link>
 
-      <li>
-        <a href="#" class="sections-item">
-          <img :src="iconCards" alt="icon-cards" class="icon-cards" />
-          Mening kartalarim</a
-        >
-      </li>
+      <router-link to="payments-page">
+        <li>
+          <a href="#" class="sections-item">
+            <img :src="iconWallet" alt="icon-wallet" class="icon-wallet" />
+            To'lovlar</a
+          >
+        </li>
+      </router-link>
 
-      <li>
-        <a href="#" class="sections-item">
-          <img
-            :src="iconMonitoring"
-            alt="icon-monitoring"
-            class="icon-monitoring"
-          />
-          Monitoring</a
-        >
-      </li>
+      <router-link to="my-cards-page">
+        <li>
+          <a href="#" class="sections-item">
+            <img :src="iconCards" alt="icon-cards" class="icon-cards" />
+            Mening kartalarim</a
+          >
+        </li>
+      </router-link>
+
+      <router-link to="/monitoring-page">
+        <li>
+          <a href="#" class="sections-item">
+            <img
+              :src="iconMonitoring"
+              alt="icon-monitoring"
+              class="icon-monitoring"
+            />
+            Monitoring</a
+          >
+        </li>
+      </router-link>
     </ul>
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-title-box">
+        <span class="sidebar-footer-title">
+          Sizga qandaydir <br />
+          yordam kerakmi?
+        </span>
+        <img class="icon-wave" :src="iconWave" alt="icon-wave" />
+      </div>
+      <div class="sidebar-footer-connect-box">
+        <img class="icon-medal" :src="iconMedal" alt="icon-medal" />
+        <span>Bog‘lanish</span>
+      </div>
+      <img class="icon-dottes" :src="iconDottes" alt="icon-dottes" />
+    </div>
   </div>
-  <section>
-    <MainPage />
-  </section>
+  <section></section>
 </template>
 <script>
 //icons
@@ -67,11 +90,14 @@ import iconTransfers from "../../assets/icons/sidebar/transfers.svg";
 import iconWallet from "../../assets/icons/sidebar/wallet.svg";
 import iconCards from "../../assets/icons/sidebar/cards.svg";
 import iconMonitoring from "../../assets/icons/sidebar/monitoring.svg";
+import iconWave from "../../assets/icons/sidebar-footer/wave.svg";
+import iconMedal from "../../assets/icons/sidebar-footer/medal.svg";
+import iconDottes from "../../assets/icons/sidebar-footer/dottes.svg";
 
 //components
-import MainPage from "./main/main.vue";
+import sidebarNavigation from "./sidebar-navigation/sidebar-navigation.vue";
 export default {
-  components: { MainPage },
+  components: { sidebarNavigation },
   data() {
     return {
       //icons
@@ -81,11 +107,14 @@ export default {
       iconWallet,
       iconCards,
       iconMonitoring,
+      iconWave,
+      iconMedal,
+      iconDottes,
     };
   },
 };
 </script>
-<style>
+<style scoped>
 .sidebar {
   position: fixed;
   left: -250px;
@@ -155,18 +184,18 @@ li a {
   border-radius: 10px;
   margin: 0px 20px;
   width: 208px;
-  margin-bottom: 5px;
+  height: 56px;
 }
-.sections-item:hover {
+.sections-item:focus {
   background: #000e58;
   color: #fff;
 }
 
-.sections-item:hover .icon-home,
-.sections-item:hover .icon-transfers,
-.sections-item:hover .icon-wallet,
-.sections-item:hover .icon-cards,
-.sections-item:hover .icon-monitoring {
+.sections-item:focus .icon-home,
+.sections-item:focus .icon-transfers,
+.sections-item:focus .icon-wallet,
+.sections-item:focus .icon-cards,
+.sections-item:focus .icon-monitoring {
   filter: invert(0%) sepia(0%) saturate(2476%) hue-rotate(86deg)
     brightness(118%) contrast(119%);
 }
@@ -185,9 +214,9 @@ label #cancel {
   border-radius: 3px;
 }
 label #btn {
-  left: 40px;
-  top: 25px;
-  font-size: 35px;
+  left: 22px;
+  top: 22px;
+  font-size: 25px;
   color: #fff;
   padding: 6px 12px;
   transition: all 0.5s;
@@ -221,5 +250,55 @@ section {
   background-size: cover;
   height: 100vh;
   transition: all 0.5s;
+}
+.sidebar-footer {
+  background: #ffd43b;
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.sidebar-footer-connect-box {
+  background: #fff;
+}
+.sidebar-footer-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar-footer-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #171b1e;
+}
+.sidebar-footer-connect-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 4px;
+}
+.sidebar-footer-connect-box span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+.sidebar-footer-connect-box span,
+.sidebar-footer-connect-box img {
+  cursor: pointer;
+}
+.icon-dottes {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  height: 9px;
 }
 </style>
