@@ -122,6 +122,7 @@ export default {
   height: 100%;
   background: #fff;
   transition: all 0.5s ease;
+  border-right: 1px solid #f4f4f4;
 }
 
 .logo-box {
@@ -136,6 +137,7 @@ export default {
   padding-left: 20px;
   gap: 11px;
   cursor: pointer;
+  border-right: 1px solid #f4f4f4;
 }
 .logo-text-bold {
   font-weight: bold;

@@ -16,7 +16,7 @@
   padding: 0 12rem;
 }
 .sidebar-container {
-  padding: 0 65px;
+  padding: 0 23px;
 }
 @font-face {
   font-family: "Gilroy";
