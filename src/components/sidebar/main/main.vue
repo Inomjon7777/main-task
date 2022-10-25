@@ -94,6 +94,7 @@
           </div>
           <!-- Monitoring of payments -->
           <div class="monitoring-of-payments">
+            <!-- monitoring-of-payments-title-box -->
             <div class="monitoring-of-payments-title-box">
               <!-- monitoring-of-payments-title -->
               <div class="monitoring-of-payments-title">
@@ -128,6 +129,51 @@
                 </button>
               </div>
             </div>
+
+            <!-- monitoring-of-payments-line-box -->
+            <div class="monitoring-of-payments-line-box">
+              <!-- 14M -->
+              <div class="line-box">
+                <p>14M</p>
+                <div class="line line-14"></div>
+              </div>
+              <!-- 12M -->
+              <div class="line-box">
+                <p>12M</p>
+                <div class="line line-12"></div>
+              </div>
+              <!-- 10M -->
+              <div class="line-box">
+                <p>10M</p>
+                <div class="line line-10"></div>
+              </div>
+              <!-- 8M -->
+              <div class="line-box">
+                <p>8M</p>
+                <div class="line line-8"></div>
+              </div>
+              <!-- 6M -->
+              <div class="line-box">
+                <p>6M</p>
+                <div class="line line-6"></div>
+              </div>
+              <!-- 4M -->
+              <div class="line-box">
+                <p>4M</p>
+                <div class="line line-4"></div>
+              </div>
+              <!-- 2M -->
+              <div class="line-box">
+                <p>2M</p>
+                <div class="line line-2"></div>
+              </div>
+              <!-- 0M -->
+              <div class="line-box">
+                <p>0M</p>
+                <div class="line line-0"></div>
+              </div>
+            </div>
+            <div>12345678910111213141516171819202122232425262728292021222324252627282930</div>
           </div>
         </div>
 
@@ -181,7 +227,7 @@ export default {
 }
 .main {
   background: #fafafa;
-  height: 89vh;
+  height: 90vh;
 }
 .title-black {
   font-family: "Gilroy";
@@ -214,7 +260,7 @@ export default {
   position: absolute;
 }
 .suptitle {
-  top: 44px;
+  top: 40px;
   left: 10px;
   padding: 4px 8px;
   background: #137cdd;
@@ -228,7 +274,7 @@ export default {
 }
 .title {
   left: 10px;
-  top: 68px;
+  top: 62px;
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
@@ -242,7 +288,7 @@ export default {
   font-size: 11px;
   letter-spacing: -0.02em;
   color: #ffffff;
-  top: 90px;
+  top: 82px;
   left: 10px;
 }
 
@@ -252,14 +298,14 @@ export default {
 .backgroundFour,
 .backgroundFive {
   width: 160px;
-  height: 110px;
+  height: 100px;
 }
 
 .payment-for-products {
   background: #fff;
   margin-top: 10px;
   border-radius: 10px;
-  padding: 20px 22px;
+  padding: 15px;
 }
 
 .payment-types {
@@ -278,7 +324,7 @@ export default {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   color: #ffffff;
   transition: all 0.4s ease;
 }
@@ -288,31 +334,32 @@ export default {
   color: #0046f9;
 }
 .inputId {
-  padding: 10px 50px 10px 15px;
+  padding: 10px 100px 10px 15px;
   border: 1px solid #ededed;
   border-radius: 10px;
   outline: none;
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   color: #4a5568;
 }
 .inputSumma {
-  padding: 10px 50px 10px 15px;
+  padding: 10px 80px 10px 15px;
   border: 1px solid #ededed;
   border-radius: 10px;
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   color: #4a5568;
   outline: none;
 }
 .selectPaymentType {
-  padding: 10px 50px 10px 15px;
+  padding: 10px 70px 10px 15px;
   border: 1px solid #ededed;
   border-radius: 10px;
+  outline: none;
 }
 .payment-for-products-title {
   font-family: "Gilroy";
@@ -343,14 +390,14 @@ export default {
   align-items: center;
 }
 .buttons-box {
-  gap: 19px;
+  gap: 10px;
 }
 .filter-button,
 .diagramma-button {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10px;
   color: #000;
   display: flex;
   align-items: center;
@@ -358,18 +405,22 @@ export default {
   background: #eff1f4;
   border-radius: 10px;
   border: 1px solid #eff1f4;
+  cursor: pointer;
+  gap: 5px;
 }
 .monitoring-of-payments {
   background: #fff;
-  margin-top: 24px;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 10px;
 }
 .monitoring-of-payments-title p {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 15px;
   color: #021723;
-  margin-bottom: 11px;
+  margin-bottom: 5px;
 }
 .monitoring-of-payments-title span {
   font-family: "Gilroy";
@@ -392,7 +443,7 @@ export default {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: -0.02em;
   color: #13dd34;
 }
@@ -403,7 +454,7 @@ export default {
 }
 .receipts img,
 .expenses img {
-  padding: 9px;
+  padding: 5px;
   border: 1px solid #f4f4f4;
   filter: drop-shadow(0px 0px 20px rgba(0, 4, 106, 0.05));
   border-radius: 10px;
@@ -421,8 +472,34 @@ export default {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: -0.02em;
   color: #dc3027;
+}
+.line-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 20px;
+}
+.line-box p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: -0.02em;
+  color: #4a5568;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background: #f4f4f4;
+}
+.line-0,
+.line-2,
+.line-4,
+.line-6,
+.line-8 {
+  margin-left: 7px;
 }
 </style>
