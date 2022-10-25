@@ -123,6 +123,7 @@ export default {
   background: #fff;
   transition: all 0.5s ease;
   border-right: 1px solid #f4f4f4;
+  z-index: 2;
 }
 
 .logo-box {
@@ -217,12 +218,13 @@ label #cancel {
 }
 label #btn {
   left: 10px;
-  top: 24px;
+  top: 18px;
   font-size: 23px;
   color: #fff;
   padding: 6px 12px;
   transition: all 0.5s;
 }
+
 label #cancel {
   z-index: 1111;
   left: -195px;

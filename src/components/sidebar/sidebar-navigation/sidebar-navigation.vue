@@ -87,6 +87,7 @@ export default {
   border: none;
   outline: none;
   padding-left: 14px;
+  padding-right: 283px;
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
@@ -127,6 +128,6 @@ select {
   padding: 10px 12px;
 }
 .sidebar-navigation {
-  padding: 12px 65px;
+  padding: 5px 65px 12px 65px;
 }
 </style>
