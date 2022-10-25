@@ -1,5 +1,5 @@
 <template>
-  <nav></nav>
+  <!-- <nav></nav> -->
   <router-view />
 </template>
 <style>
@@ -14,6 +14,9 @@
 
 .container {
   padding: 0 12rem;
+}
+.sidebar-container {
+  padding: 0 65px;
 }
 @font-face {
   font-family: "Gilroy";

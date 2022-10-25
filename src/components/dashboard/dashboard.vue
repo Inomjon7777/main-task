@@ -1,16 +1,21 @@
 <template>
-  <div class="dashboard">
-    <sidebar />
-    <div class="content"><sidebarNavigation /> <router-view /></div>
+  <div class="big">
+    <div class="dashboard">
+      <sidebar />
+      <div class="content">
+        <SidebarNavigation />
+        <router-view />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import SidebarNavigation from "../sidebar/sidebar-navigation/sidebar-navigation.vue";
 import sidebar from "../sidebar/sidebar.vue";
-import sidebarNavigation from "../sidebar/sidebar-navigation/sidebar-navigation.vue";
 export default {
   name: "home",
-  components: { sidebar, sidebarNavigation },
+  components: { sidebar, SidebarNavigation },
 };
 </script>
 
@@ -21,8 +26,9 @@ export default {
 }
 
 .content {
-  background-color: white;
+  background-color: #fff;
   border-radius: 10px;
   margin: 6px 6px 6px 0px;
+  width: 100%;
 }
 </style>

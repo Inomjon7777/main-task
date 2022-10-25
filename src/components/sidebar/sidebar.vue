@@ -214,9 +214,9 @@ label #cancel {
   border-radius: 3px;
 }
 label #btn {
-  left: 22px;
-  top: 22px;
-  font-size: 25px;
+  left: 10px;
+  top: 24px;
+  font-size: 23px;
   color: #fff;
   padding: 6px 12px;
   transition: all 0.5s;
