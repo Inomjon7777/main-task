@@ -340,8 +340,167 @@
           </div>
         </div>
 
-        <div class="total-balance-box">
-          <p>Umuiy balans</p>
+        <!-- balance-section -->
+        <div class="balance-section">
+          <p class="balance-section-title">Umumiy balans</p>
+          <!-- balance-section-balance-box -->
+          <div class="balance-section-balance-box">
+            <div class="receipts-expenses-box">
+              <div class="receipts-box">
+                <img :src="iconDownload" alt="download-icon" />
+                <div class="receipts-box-word-box">
+                  <p>Tushumlar</p>
+                  <p>5 457 120.00 UZS</p>
+                </div>
+              </div>
+              <div class="expenses-box">
+                <img :src="iconUpload" alt="upload-icon" />
+                <div class="expenses-box-word-box">
+                  <p>Chiqimlar</p>
+                  <p>2 254 001.00 UZS</p>
+                </div>
+              </div>
+            </div>
+            <p class="my-balance">2 837 643.74 SO‘M</p>
+            <div class="hide-balance-box">
+              <img :src="iconEyeEmpty" alt="icon-eye-empty" />
+              <span>Balansni yashirish</span>
+            </div>
+          </div>
+          <!-- cards box -->
+          <div class="myCards">
+            <select class="myCards-title">
+              <option value="myCards">Mening kartalarim</option>
+            </select>
+            <div class="myGreenCard">
+              <div class="myGreenCard-titleBox">
+                <div class="myGreenCard-titleBox-logoBox">
+                  <img :src="iconTbcLogo" alt="iconTbcLogo" />
+                  <p class="myGreenCard-titleBox-logoBox-logoWord">TBC</p>
+                </div>
+                <div class="myGreenCard-titleBox-dotMenuBox">
+                  <img :src="iconDotMenu" alt="iconDotMenu" />
+                </div>
+              </div>
+              <p class="myCardNumer">8600 14** *** 8616</p>
+              <div class="balanceVsUzcardBox">
+                <p>945 881.24</p>
+                <img :src="iconUzcard" alt="iconUzcard" />
+              </div>
+              <img
+                class="iconMountainEffect"
+                :src="iconMountainEffect"
+                alt="iconMountainEffect"
+              />
+            </div>
+            <div class="myPinkCard">
+              <div class="myPinkCard-titleBox">
+                <div class="myPinkCard-titleBox-logoBox">
+                  <img :src="iconTbcLogo" alt="iconTbcLogo" />
+                  <p class="myPinkCard-titleBox-logoBox-logoWord">TBC</p>
+                </div>
+                <div class="myPinkCard-titleBox-dotMenuBox">
+                  <img :src="iconDotMenu" alt="iconDotMenu" />
+                </div>
+              </div>
+              <p class="myCardNumer">8600 14** *** 8616</p>
+              <div class="balanceVsUzcardBox">
+                <p>945 881.24</p>
+                <img :src="iconUzcard" alt="iconUzcard" />
+              </div>
+              <img
+                class="iconMountainEffect"
+                :src="iconMountainEffect"
+                alt="iconMountainEffect"
+              />
+            </div>
+          </div>
+          <!-- Central bank rates -->
+          <div class="central-bank-rates">
+            <select>
+              <option value="central-bank-rates">Markaziy bank kurslari</option>
+            </select>
+            <div class="usd-box">
+              <div class="flag-box">
+                <img :src="iconUnitedStates" alt="" />
+                <span>1 USD</span>
+              </div>
+              <div class="buy-box">
+                <p>Sotish olish</p>
+                <p>
+                  11 055.00
+                  <img :src="iconPolygonBottom" alt="iconPolygonBottom" />
+                </p>
+              </div>
+              <div class="sell">
+                <p>Sotish</p>
+                <p>
+                  11 085.00
+                  <img :src="iconPolygonTop" alt="iconPolygonTop" />
+                </p>
+              </div>
+            </div>
+            <div class="eur-box">
+              <div class="flag-box">
+                <img :src="iconEuropeanUnion" alt="" />
+                <span>1 USD</span>
+              </div>
+              <div class="buy-box">
+                <p>Sotish olish</p>
+                <p>
+                  11 055.00
+                  <img :src="iconPolygonBottom" alt="iconPolygonBottom" />
+                </p>
+              </div>
+              <div class="sell">
+                <p>Sotish</p>
+                <p>
+                  11 085.00
+                  <img :src="iconPolygonTop" alt="iconPolygonTop" />
+                </p>
+              </div>
+            </div>
+            <div class="gbr-box">
+              <div class="flag-box">
+                <img :src="iconUnitedKingdom" alt="" />
+                <span>1 USD</span>
+              </div>
+              <div class="buy-box">
+                <p>Sotish olish</p>
+                <p>
+                  11 055.00
+                  <img :src="iconPolygonBottom" alt="iconPolygonBottom" />
+                </p>
+              </div>
+              <div class="sell">
+                <p>Sotish</p>
+                <p>
+                  11 085.00
+                  <img :src="iconPolygonTop" alt="iconPolygonTop" />
+                </p>
+              </div>
+            </div>
+            <div class="rub-box">
+              <div class="flag-box">
+                <img :src="iconRussia" alt="" />
+                <span>1 USD</span>
+              </div>
+              <div class="buy-box">
+                <p>Sotish olish</p>
+                <p>
+                  11 055.00
+                  <img :src="iconPolygonBottom" alt="iconPolygonBottom" />
+                </p>
+              </div>
+              <div class="sell">
+                <p>Sotish</p>
+                <p>
+                  11 085.00
+                  <img :src="iconPolygonTop" alt="iconPolygonTop" />
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -362,6 +521,17 @@ import iconDownload from "../../../assets/icons/main/download.svg";
 import iconUpload from "../../../assets/icons/main/upload.svg";
 import iconDiagramma from "../../../assets/icons/main/diagramma.svg";
 import iconFiltr from "../../../assets/icons/main/filtr.svg";
+import iconEyeEmpty from "../../../assets/icons/main/eye-empty.svg";
+import iconTbcLogo from "../../../assets/icons/main/tbc-logo.svg";
+import iconDotMenu from "../../../assets/icons/main/menu.svg";
+import iconMountainEffect from "../../../assets/icons/main/mountain-effect.png";
+import iconUzcard from "../../../assets/icons/main/uzcard.svg";
+import iconPolygonTop from "../../../assets/icons/main/polygon-top.svg";
+import iconPolygonBottom from "../../../assets/icons/main/polygon-bottom.svg";
+import iconUnitedStates from "../../../assets/icons/main/united states.svg";
+import iconUnitedKingdom from "../../../assets/icons/main/united kingdom.svg";
+import iconRussia from "../../../assets/icons/main/russia.svg";
+import iconEuropeanUnion from "../../../assets/icons/main/european union.svg";
 export default {
   data() {
     return {
@@ -377,6 +547,17 @@ export default {
       iconUpload,
       iconDiagramma,
       iconFiltr,
+      iconEyeEmpty,
+      iconTbcLogo,
+      iconDotMenu,
+      iconMountainEffect,
+      iconUzcard,
+      iconPolygonTop,
+      iconPolygonBottom,
+      iconUnitedStates,
+      iconUnitedKingdom,
+      iconRussia,
+      iconEuropeanUnion,
     };
   },
   components: {
@@ -929,5 +1110,175 @@ export default {
 .thirty .second-equalizer {
   height: 2.5px;
   left: 870px;
+}
+/*balance-section*/
+.balance-section {
+  margin-left: 24px;
+}
+.balance-section-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #021723;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+.receipts-expenses-box,
+.receipts-box,
+.expenses-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.receipts-box,
+.expenses-box {
+  gap: 10px;
+}
+.hide-balance-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.hide-balance-box span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.balance-section-balance-box {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 13px;
+  width: 100%;
+}
+.receipts-box-word-box p:first-child,
+.expenses-box-word-box p:first-child {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #4a5568;
+}
+.receipts-box-word-box p:last-child,
+.expenses-box-word-box p:last-child {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-top: 5px;
+}
+.receipts-box-word-box p:last-child {
+  color: #137cdd;
+}
+.expenses-box-word-box p:last-child {
+  color: #dc3027;
+}
+.receipts-box img,
+.expenses-box img {
+  padding: 7px;
+  border: 1px solid #f4f4f4;
+  filter: drop-shadow(0px 0px 20px rgba(0, 4, 106, 0.05));
+  border-radius: 10px;
+}
+.my-balance {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  color: #021723;
+  margin-top: 10px;
+}
+.myGreenCard,
+.myPinkCard {
+  border-radius: 10px;
+  padding: 14px;
+  position: relative;
+}
+.myGreenCard {
+  background: linear-gradient(108.7deg, #14b598 -5.17%, #146ec0 158.98%);
+}
+.myPinkCard {
+  background: linear-gradient(108.7deg, #8114b5 -5.17%, #146ec0 158.98%);
+  border-radius: 10px;
+}
+.myGreenCard-titleBox,
+.myPinkCard-titleBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myGreenCard-titleBox-logoBox,
+.myPinkCard-titleBox-logoBox {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.myGreenCard-titleBox-logoBox-logoWord,
+.myPinkCard-titleBox-logoBox-logoWord {
+  color: #fff;
+  font-weight: bold;
+}
+.myGreenCard-titleBox-dotMenuBox img,
+.myPinkCard-titleBox-dotMenuBox img {
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 7px;
+}
+.myCardNumer {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-size: 14px;
+  display: flex;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.balanceVsUzcardBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.balanceVsUzcardBox p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  display: flex;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.iconMountainEffect {
+  position: absolute;
+  bottom: 0;
+  left: -55px;
+}
+
+.myCards-title {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.usd-box,
+.eur-box,
+.gbr-box,
+.rub-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.usd-box .flag-box,
+.eur-box .flag-box,
+.gbr-box .flag-box,
+.rub-box .flag-box {
+  display: flex;
+  align-items: center;
+  
 }
 </style>

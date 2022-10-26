@@ -25,7 +25,10 @@
         Playmarket yoki AppStore orqali mobil <br />ilovani o‘rnating
       </p>
       <div class="apps">
-        <a href="https://play.google.com/store/games?hl=ru&gl=US">
+        <a
+          href="https://play.google.com/store/games?hl=ru&gl=US"
+          target="blank"
+        >
           <img class="google-play" :src="googlePlay" alt="google-play" />
         </a>
         <a href="https://www.apple.com/ru/app-store/">

@@ -1,86 +1,88 @@
 <template>
-  <input type="checkbox" id="check" />
-  <label for="check">
-    <i class="fas fa-bars" id="btn"></i>
-    <i class="fas fa-times" id="cancel"></i>
-  </label>
-  <div class="sidebar">
-    <div class="logo-box">
-      <img :src="iconSidebarLogo" alt="sidebar-logo" />
-      <p>Real<span class="logo-text-bold">Pay</span></p>
-    </div>
-    <ul class="sections-box">
-      <p class="sidebar-title">BOSHQARUV PANELI</p>
-
-      <router-link to="/main-page">
-        <li>
-          <a href="#" class="sections-item">
-            <img :src="iconHome" alt="icon-home" class="icon-home" />
-            Asosiy</a
-          >
-        </li>
-      </router-link>
-
-      <router-link to="/transfers-page">
-        <li>
-          <a href="#" class="sections-item">
-            <img
-              :src="iconTransfers"
-              alt="icon-transfers"
-              class="icon-transfers"
-            />
-            O'tkazmalar</a
-          >
-        </li>
-      </router-link>
-
-      <router-link to="payments-page">
-        <li>
-          <a href="#" class="sections-item">
-            <img :src="iconWallet" alt="icon-wallet" class="icon-wallet" />
-            To'lovlar</a
-          >
-        </li>
-      </router-link>
-
-      <router-link to="my-cards-page">
-        <li>
-          <a href="#" class="sections-item">
-            <img :src="iconCards" alt="icon-cards" class="icon-cards" />
-            Mening kartalarim</a
-          >
-        </li>
-      </router-link>
-
-      <router-link to="/monitoring-page">
-        <li>
-          <a href="#" class="sections-item">
-            <img
-              :src="iconMonitoring"
-              alt="icon-monitoring"
-              class="icon-monitoring"
-            />
-            Monitoring</a
-          >
-        </li>
-      </router-link>
-    </ul>
-    <div class="sidebar-footer">
-      <div class="sidebar-footer-title-box">
-        <span class="sidebar-footer-title">
-          Sizga qandaydir <br />
-          yordam kerakmi?
-        </span>
-        <img class="icon-wave" :src="iconWave" alt="icon-wave" />
+  <div class="grow">
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <div class="logo-box">
+        <img :src="iconSidebarLogo" alt="sidebar-logo" />
+        <p>Real<span class="logo-text-bold">Pay</span></p>
       </div>
-      <div class="sidebar-footer-connect-box">
-        <img class="icon-medal" :src="iconMedal" alt="icon-medal" />
-        <span>Bog‘lanish</span>
+      <ul class="sections-box">
+        <p class="sidebar-title">BOSHQARUV PANELI</p>
+
+        <router-link to="/main-page">
+          <li>
+            <a href="#" class="sections-item" target="blank">
+              <img :src="iconHome" alt="icon-home" class="icon-home" />
+              Asosiy</a
+            >
+          </li>
+        </router-link>
+
+        <router-link to="/transfers-page">
+          <li>
+            <a href="#" class="sections-item" target="blank">
+              <img
+                :src="iconTransfers"
+                alt="icon-transfers"
+                class="icon-transfers"
+              />
+              O'tkazmalar</a
+            >
+          </li>
+        </router-link>
+
+        <router-link to="payments-page">
+          <li>
+            <a href="#" class="sections-item" target="blank">
+              <img :src="iconWallet" alt="icon-wallet" class="icon-wallet" />
+              To'lovlar</a
+            >
+          </li>
+        </router-link>
+
+        <router-link to="my-cards-page">
+          <li>
+            <a href="#" class="sections-item" target="blank">
+              <img :src="iconCards" alt="icon-cards" class="icon-cards" />
+              Mening kartalarim</a
+            >
+          </li>
+        </router-link>
+
+        <router-link to="/monitoring-page">
+          <li>
+            <a href="#" class="sections-item" target="blank">
+              <img
+                :src="iconMonitoring"
+                alt="icon-monitoring"
+                class="icon-monitoring"
+              />
+              Monitoring</a
+            >
+          </li>
+        </router-link>
+      </ul>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-title-box">
+          <span class="sidebar-footer-title">
+            Sizga qandaydir <br />
+            yordam kerakmi?
+          </span>
+          <img class="icon-wave" :src="iconWave" alt="icon-wave" />
+        </div>
+        <div class="sidebar-footer-connect-box">
+          <img class="icon-medal" :src="iconMedal" alt="icon-medal" />
+          <span>Bog‘lanish</span>
+        </div>
+        <img class="icon-dottes" :src="iconDottes" alt="icon-dottes" />
       </div>
-      <img class="icon-dottes" :src="iconDottes" alt="icon-dottes" />
     </div>
+    <section></section>
   </div>
-  <section></section>
 </template>
 <script>
 //icons
@@ -217,7 +219,7 @@ label #cancel {
   border-radius: 3px;
 }
 label #btn {
-  left: 10px;
+  left: 20px;
   top: 18px;
   font-size: 23px;
   color: #fff;

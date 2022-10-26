@@ -1,11 +1,9 @@
 <template>
-  <div class="big">
-    <div class="dashboard">
-      <sidebar />
-      <div class="content">
-        <SidebarNavigation />
-        <router-view />
-      </div>
+  <div class="dashboard">
+    <sidebar />
+    <div class="content">
+      <SidebarNavigation />
+      <router-view />
     </div>
   </div>
 </template>

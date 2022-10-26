@@ -28,13 +28,13 @@
           <li>Ekologik siyosat</li>
         </ul>
         <div class="social-networks">
-          <a href="https://desktop.telegram.org/">
+          <a href="https://desktop.telegram.org/"  target="blank">
             <img class="telegram" :src="telegram" alt="telegram" />
           </a>
-          <a href="https://www.facebook.com/">
+          <a href="https://www.facebook.com/"  target="blank">
             <img class="facebook" :src="facebook" alt="facebook" />
           </a>
-          <a href="https://www.instagram.com/">
+          <a href="https://www.instagram.com/"  target="blank">
             <img class="instagram" :src="instagram" alt="instagram" />
           </a>
         </div>
@@ -50,7 +50,7 @@
         <p class="website-creator">
           Sayt yaratuvchisi:
           <span class="realsoft">
-            <a class="realsoft-link" href="https://realsoft.uz/">REALSOFT</a>
+            <a class="realsoft-link" href="https://realsoft.uz/"  target="blank">REALSOFT</a>
           </span>
         </p>
       </div>

@@ -14,10 +14,10 @@
           </p>
           <p class="subtitle">Bizning ilovani ko’chirib oling 👇</p>
           <div class="apps">
-            <a href="https://play.google.com/store/games">
+            <a href="https://play.google.com/store/games" target="blank">
               <img class="playStore" :src="PlayStore" alt="PlayStore" />
             </a>
-            <a href="https://www.apple.com/ru/app-store/">
+            <a href="https://www.apple.com/ru/app-store/" target="blank">
               <img class="appStore" :src="AppStore" alt="AppStore" />
             </a>
           </div>
