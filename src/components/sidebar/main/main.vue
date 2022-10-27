@@ -575,7 +575,7 @@ export default {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 20px;
   color: #000000;
   padding-top: 10px;
 }
@@ -583,7 +583,7 @@ export default {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 14px;
   color: #919191;
 }
 .sidebar-background-boxes {

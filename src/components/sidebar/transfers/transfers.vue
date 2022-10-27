@@ -1,7 +1,7 @@
 <template>
   <div class="transfers" id="transfers">
     <p class="transfers__title">
-      Asosiy <span class="transfers__title-grey">/ O‘tkazmalar</span>
+      Asosiy<span class="transfers__title-grey"> / O‘tkazmalar</span>
     </p>
     <div class="transfers-boxes">
       <!---TRANSFER FROM CARD TO CARD--->
@@ -57,16 +57,22 @@
           <div class="plastic-card-box">
             <p class="plastic-card-box__title">O’tkazma summasi</p>
             <div class="plastic-card-box__card-box">
-              <img :src="iconUzcard" alt="icon_two_card" />
+              <div class="icon-uzcard-box">
+                <img class="iconUzcard" :src="iconUzcard" alt="icon_two_card" />
+              </div>
               <div class="plastic-card-box__card-box__word-box">
                 <p>8600 14** **** 1816</p>
                 <p>2 457 844.00 UZS</p>
               </div>
-              <img :src="iconVerticalStrelka" alt="icon_vertical_strelka" />
+              <img
+                class="icon_vertical_strelka"
+                :src="iconVerticalStrelka"
+                alt="icon_vertical_strelka"
+              />
             </div>
           </div>
           <!-- button the next step -->
-          <button>Keyingi qadam</button>
+          <div class="the-next-step-box"><button>Keyingi qadam</button></div>
         </div>
       </div>
       <!---HISTORY OF TRANSFERS--->
@@ -161,7 +167,7 @@ import iconRecipientsCard from "../../../assets/icons/transfers/iconRecipientsCa
 import iconVerticalStrelka from "../../../assets/icons/transfers/iconVerticalStrelka.svg";
 import iconUserSquare from "../../../assets/icons/transfers/iconUserSquare.svg";
 import iconTwoCard from "../../../assets/icons/transfers/iconTwoCard.svg";
-import iconUzcard from "../../../assets/icons/transfers/iconUzcard.png";
+import iconUzcard from "../../../assets/icons/transfers/Uzcard.png";
 //icons
 export default {
   data() {
@@ -187,6 +193,9 @@ export default {
 .transfers-boxes {
   display: flex;
 }
+.transfer-from-card-to-card {
+  margin: 24px;
+}
 .transfer-from-card-to-card,
 .history-of-transfers {
   background: #ffffff;
@@ -198,6 +207,8 @@ export default {
   font-weight: 700;
   font-size: 20px;
   color: #000000;
+  padding-top: 10px;
+  padding-left: 23px;
 }
 .transfers__title-grey {
   font-family: "Gilroy";
@@ -219,6 +230,7 @@ export default {
   font-weight: 600;
   font-size: 20px;
   color: #021723;
+  margin-top: 20px;
 }
 .transfer-from-card-to-card__description {
   font-family: "Gilroy";
@@ -226,6 +238,11 @@ export default {
   font-weight: 500;
   font-size: 14px;
   color: #919191;
+  margin-top: 6px;
+}
+
+.transfer-from-card-to-card > p {
+  margin-left: 22px;
 }
 .transfer__buttons-box {
   display: flex;
@@ -321,5 +338,151 @@ export default {
 .transfer-amount-box__input-box input {
   width: 100%;
   border: none;
+}
+.plastic-card-box__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #021723;
+}
+.plastic-card-box__card-box {
+  display: flex;
+  padding: 19px 17px;
+  border: 1px solid #d5e3ed;
+  border-radius: 10px;
+}
+.iconUzcard {
+  width: 33px;
+  height: 33px;
+  object-fit: contain;
+}
+.icon-uzcard-box {
+  padding: 9px;
+  border-radius: 50%;
+  background-color: #193f85;
+}
+.plastic-card-box__card-box__word-box p:first-child {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+.plastic-card-box__card-box__word-box {
+  margin-left: 16px;
+}
+.plastic-card-box__card-box__word-box p:last-child {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+}
+.icon_vertical_strelka {
+  margin-left: 350px;
+}
+.the-next-step-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 33px;
+}
+.the-next-step-box button {
+  padding: 16.5px 35.5px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  background: #fbab07;
+  border-radius: 10px;
+  border: 1px solid #fbab07;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.the-next-step-box button:hover {
+  background-color: #fff;
+  color: #fbab07;
+}
+
+/*HISTORY OF TRANSFERS*/
+.history-of-transfers {
+  padding: 20px 22px;
+}
+.history-of-transfers-box__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #021723;
+}
+.history-of-transfers-box__date-box {
+  display: flex;
+}
+.history-of-transfers-box__date-box p:first-child {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.green-summa,
+.red-summa,
+.grey-slash {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: -0.02em;
+}
+.green-summa {
+  color: #00b488;
+}
+.red-summa {
+  color: #c42126;
+}
+.grey-slash {
+  color: #6a7494;
+}
+.summa {
+  display: flex;
+  align-items: center;
+}
+.history-of-transfers-box__card-box {
+  display: flex;
+}
+.card-name-vs-date p:first-child {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: #022964;
+}
+.card-name-vs-date p:last-child {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: -0.02em;
+  color: #6a7494;
+}
+.cut-off-amount-vs-card-number p:last-child {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: -0.02em;
+  color: #6a7494;
+}
+.cut-off-amount-vs-card-number p:first-child {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: #dc3027;
 }
 </style>
