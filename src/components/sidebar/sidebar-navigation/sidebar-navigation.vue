@@ -128,6 +128,6 @@ select {
   padding: 10px 12px;
 }
 .sidebar-navigation {
-  padding: 5px 25px 12px 20px;
+  padding: 0px 25px 5px 20px;
 }
 </style>

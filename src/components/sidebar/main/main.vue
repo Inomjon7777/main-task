@@ -432,7 +432,7 @@
                   <img :src="iconPolygonBottom" alt="iconPolygonBottom" />
                 </p>
               </div>
-              <div class="sell">
+              <div class="sell-box">
                 <p>Sotish</p>
                 <p>
                   11 085.00
@@ -443,60 +443,59 @@
             <div class="eur-box">
               <div class="flag-box">
                 <img :src="iconEuropeanUnion" alt="" />
-                <span>1 USD</span>
+                <span>1 EUR</span>
               </div>
               <div class="buy-box">
                 <p>Sotish olish</p>
                 <p>
                   11 055.00
-                  <img :src="iconPolygonBottom" alt="iconPolygonBottom" />
+                  <img :src="iconPolygonTop" alt="iconPolygonTop" />
                 </p>
               </div>
-              <div class="sell">
+              <div class="sell-box">
                 <p>Sotish</p>
                 <p>
                   11 085.00
-                  <img :src="iconPolygonTop" alt="iconPolygonTop" />
+                  <img :src="iconPolygonBottom" alt="iconPolygonBottom" />
                 </p>
               </div>
             </div>
-            <div class="gbr-box">
+            <div class="gbp-box">
               <div class="flag-box">
                 <img :src="iconUnitedKingdom" alt="" />
-                <span>1 USD</span>
+                <span>1 GBP</span>
               </div>
               <div class="buy-box">
                 <p>Sotish olish</p>
                 <p>
-                  11 055.00
-                  <img :src="iconPolygonBottom" alt="iconPolygonBottom" />
+                  11 055.00 <img :src="iconPolygonTop" alt="iconPolygonTop" />
                 </p>
               </div>
-              <div class="sell">
+              <div class="sell-box">
                 <p>Sotish</p>
                 <p>
                   11 085.00
-                  <img :src="iconPolygonTop" alt="iconPolygonTop" />
+                  <img :src="iconPolygonBottom" alt="iconPolygonBottom" />
                 </p>
               </div>
             </div>
             <div class="rub-box">
               <div class="flag-box">
                 <img :src="iconRussia" alt="" />
-                <span>1 USD</span>
+                <span>1 RUB</span>
               </div>
               <div class="buy-box">
                 <p>Sotish olish</p>
                 <p>
                   11 055.00
-                  <img :src="iconPolygonBottom" alt="iconPolygonBottom" />
+                  <img :src="iconPolygonTop" alt="iconPolygonTop" />
                 </p>
               </div>
-              <div class="sell">
+              <div class="sell-box">
                 <p>Sotish</p>
                 <p>
                   11 085.00
-                  <img :src="iconPolygonTop" alt="iconPolygonTop" />
+                  <img :src="iconPolygonBottom" alt="iconPolygonBottom" />
                 </p>
               </div>
             </div>
@@ -577,7 +576,7 @@ export default {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   color: #000000;
   padding-top: 10px;
 }
@@ -585,7 +584,7 @@ export default {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10px;
   color: #919191;
 }
 .sidebar-background-boxes {
@@ -649,7 +648,7 @@ export default {
   background: #fff;
   margin-top: 10px;
   border-radius: 10px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .payment-types {
@@ -1119,7 +1118,7 @@ export default {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   color: #021723;
   margin-top: 10px;
   margin-bottom: 14px;
@@ -1152,7 +1151,7 @@ export default {
 .balance-section-balance-box {
   background: #ffffff;
   border-radius: 10px;
-  padding: 13px;
+  padding: 10px;
   width: 100%;
 }
 .receipts-box-word-box p:first-child,
@@ -1186,20 +1185,22 @@ export default {
   border: 1px solid #f4f4f4;
   filter: drop-shadow(0px 0px 20px rgba(0, 4, 106, 0.05));
   border-radius: 10px;
+  height: 15px;
 }
 .my-balance {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 20px;
   color: #021723;
   margin-top: 10px;
 }
 .myGreenCard,
 .myPinkCard {
   border-radius: 10px;
-  padding: 14px;
+  padding: 10px;
   position: relative;
+  margin-top: 10px;
 }
 .myGreenCard {
   background: linear-gradient(108.7deg, #14b598 -5.17%, #146ec0 158.98%);
@@ -1207,6 +1208,12 @@ export default {
 .myPinkCard {
   background: linear-gradient(108.7deg, #8114b5 -5.17%, #146ec0 158.98%);
   border-radius: 10px;
+}
+
+.myGreenCard-titleBox-logoBox img,
+.myPinkCard-titleBox-logoBox img {
+  width: 20px;
+  height: 20px;
 }
 .myGreenCard-titleBox,
 .myPinkCard-titleBox {
@@ -1224,6 +1231,7 @@ export default {
 .myPinkCard-titleBox-logoBox-logoWord {
   color: #fff;
   font-weight: bold;
+  font-size: 12px;
 }
 .myGreenCard-titleBox-dotMenuBox img,
 .myPinkCard-titleBox-dotMenuBox img {
@@ -1234,7 +1242,7 @@ export default {
 .myCardNumer {
   font-family: "Gilroy";
   font-style: normal;
-  font-size: 14px;
+  font-size: 8px;
   display: flex;
   letter-spacing: 0.05em;
   color: #ffffff;
@@ -1249,7 +1257,7 @@ export default {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 20px;
   display: flex;
   letter-spacing: 0.05em;
   color: #ffffff;
@@ -1260,14 +1268,42 @@ export default {
   left: -55px;
 }
 
+.myCards {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 13px;
+  margin: 10px 0;
+}
+
 .myCards-title {
   border: none;
   outline: none;
   width: 100%;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #021723;
+}
+.central-bank-rates {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.central-bank-rates select {
+  border: none;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #021723;
+  margin-bottom: 10px;
 }
 .usd-box,
 .eur-box,
-.gbr-box,
+.gbp-box,
 .rub-box {
   display: flex;
   align-items: center;
@@ -1275,10 +1311,44 @@ export default {
 }
 .usd-box .flag-box,
 .eur-box .flag-box,
-.gbr-box .flag-box,
+.gbp-box .flag-box,
 .rub-box .flag-box {
   display: flex;
   align-items: center;
-  
+}
+.flag-box img {
+  width: 20px;
+  height: 20px;
+}
+.flag-box span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #000000;
+  margin-left: 11px;
+}
+.buy-box p:first-child,
+.sell-box p:first-child {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #7b839e;
+}
+.buy-box p:last-child,
+.sell-box p:last-child {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1px;
+}
+.buy-box img,
+.sell-box img {
+  margin-left: 3px;
 }
 </style>

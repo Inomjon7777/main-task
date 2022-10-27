@@ -250,6 +250,9 @@ label #cancel {
 #check:checked ~ section {
   margin-left: 250px;
 }
+.sidebar {
+  width: 250px;
+}
 section {
   background-color: #fafafa;
   background-position: center;
