@@ -570,7 +570,6 @@ export default {
 }
 .main {
   background: #fafafa;
-  height: 92vh;
 }
 .title-black {
   font-family: "Gilroy";
