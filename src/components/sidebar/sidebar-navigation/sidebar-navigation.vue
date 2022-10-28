@@ -58,6 +58,7 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
+
 .sidebar-navigation {
   background: #ffffff;
   border-bottom: 1px solid #f4f4f4;

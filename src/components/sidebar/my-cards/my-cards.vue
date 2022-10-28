@@ -153,10 +153,10 @@ export default {
 }
 
 .my-card-box {
-  flex-grow: 10;
   background-color: #fff;
   border-radius: 10px;
   margin-bottom: 24px;
+  width: 94%;
 }
 
 .text-my-cards {
@@ -181,7 +181,7 @@ export default {
   font-weight: 700;
   font-size: 20px;
   color: #000000;
-  padding: 18px 0px 14px 24px;
+  padding: 10px 0px 14px 24px;
 }
 .my-cards-title-grey {
   font-family: "Gilroy";

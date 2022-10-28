@@ -208,7 +208,7 @@ export default {
   font-size: 20px;
   color: #000000;
   padding-top: 10px;
-  padding-left: 23px;
+  padding-left: 24px;
 }
 .transfers__title-grey {
   font-family: "Gilroy";

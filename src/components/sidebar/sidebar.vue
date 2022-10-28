@@ -220,7 +220,7 @@ label #cancel {
 }
 label #btn {
   left: 20px;
-  top: 18px;
+  top: 13px;
   font-size: 23px;
   color: #fff;
   padding: 6px 12px;

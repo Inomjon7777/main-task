@@ -1,7 +1,6 @@
 <template>
   <div class="payments">
     <div class="title-wrapper"></div>
-
     <div class="payments-boxes">
       <div class="payments-box">
         <p class="payments-box__title">To‘lovlar</p>
