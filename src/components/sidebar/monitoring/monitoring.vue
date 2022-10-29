@@ -365,7 +365,7 @@ export default {
   height: 655px;
 }
 .monitoring-box {
-  height: 537px;
+  height: 545px;
   background: #fff;
   margin: 0 24px;
   border-radius: 10px;

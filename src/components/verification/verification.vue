@@ -116,6 +116,7 @@ export default {
   cursor: pointer;
   transition: all 0.5s ease;
   margin-top: 15px;
+  width: 185px;
 }
 
 .access-button {

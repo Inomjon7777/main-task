@@ -191,6 +191,7 @@ li a {
   width: 208px;
   height: 56px;
 }
+.sections-item:hover,
 .sections-item:focus {
   background: #000e58;
   color: #fff;

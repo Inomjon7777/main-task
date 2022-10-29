@@ -1,121 +1,119 @@
 <template>
   <div class="my-cards">
-    <p class="my-cards-title">
-      Asosiy <span class="my-cards-title-grey"> / Mening kartalarim</span>
+    <p class="my-cards__title">
+      Asosiy <span class="my-cards__title-gray"> / Mening kartalarim</span>
     </p>
-    <div id="main">
-      <div class="my-card-box">
-        <div class="myCards-vs-cardAdd-box">
-          <div class="myCardsBox">
-            <p class="text-my-cards">Mening kartalarim</p>
-            <p class="text-security">Xavfsizlik kafolatlari ta’minlangan 👌</p>
-          </div>
-          <button class="cardAddBox">
-            <span>+</span>
-            <span>Karta qo'shish</span>
-          </button>
+    <div class="my-cards-box">
+      <div class="myCards-vs-cardAdd-box">
+        <div class="myCardsBox">
+          <p class="text-my-cards">Mening kartalarim</p>
+          <p class="text-security">Xavfsizlik kafolatlari ta’minlangan 👌</p>
         </div>
-        <div class="cards-box">
-          <div class="card-box card-box-green">
-            <div class="card-box__title-box">
-              <div class="logo-box">
-                <img class="iconTbc" :src="iconTbc" alt="iconTbc" />
-                <p>TBC</p>
-              </div>
-              <div class="dot-menu">
-                <img class="iconDotMenu" :src="iconDotMenu" alt="iconDotMenu" />
-              </div>
+        <button class="cardAddBox">
+          <span>+</span>
+          <span>Karta qo'shish</span>
+        </button>
+      </div>
+      <div class="cards-box">
+        <div class="card-box card-box-green">
+          <div class="card-box__title-box">
+            <div class="logo-box">
+              <img class="iconTbc" :src="iconTbc" alt="iconTbc" />
+              <p>TBC</p>
             </div>
-            <p class="balance">945 881.24</p>
-            <div class="cardNumber-vs-validityPeriod">
-              <p class="card-number">8600 14** *** 8616</p>
-              <p class="validity-period">10/23</p>
+            <div class="dot-menu">
+              <img class="iconDotMenu" :src="iconDotMenu" alt="iconDotMenu" />
             </div>
-            <div class="cardholder-vs-uzcardLogoBox">
-              <p class="text-cardholder">ISTAMOV KHURSHID</p>
-              <img :src="iconUzcard" alt="iconUzcard" />
-            </div>
-            <img
-              class="iconMountainEffect"
-              :src="iconMountainEffect"
-              alt="iconMountainEffect"
-            />
           </div>
-          <div class="card-box card-box-red">
-            <div class="card-box__title-box">
-              <div class="logo-box">
-                <img class="iconTbc" :src="iconTbc" alt="iconTbc" />
-                <p>TBC</p>
-              </div>
-              <div class="dot-menu">
-                <img class="iconDotMenu" :src="iconDotMenu" alt="iconDotMenu" />
-              </div>
-            </div>
-            <p class="balance">945 881.24</p>
-            <div class="cardNumber-vs-validityPeriod">
-              <p class="card-number">8600 14** *** 8616</p>
-              <p class="validity-period">10/23</p>
-            </div>
-            <div class="cardholder-vs-uzcardLogoBox">
-              <p class="text-cardholder">ISTAMOV KHURSHID</p>
-              <img :src="iconUzcard" alt="iconUzcard" />
-            </div>
-            <img
-              class="iconMountainEffect"
-              :src="iconMountainEffect"
-              alt="iconMountainEffect"
-            />
+          <p class="balance">945 881.24</p>
+          <div class="cardNumber-vs-validityPeriod">
+            <p class="card-number">8600 14** *** 8616</p>
+            <p class="validity-period">10/23</p>
           </div>
-          <div class="card-box card-box-blue">
-            <div class="card-box__title-box">
-              <div class="logo-box">
-                <img class="iconTbc" :src="iconTbc" alt="iconTbc" />
-                <p>TBC</p>
-              </div>
-              <div class="dot-menu">
-                <img class="iconDotMenu" :src="iconDotMenu" alt="iconDotMenu" />
-              </div>
-            </div>
-            <p class="balance">945 881.24</p>
-            <div class="cardNumber-vs-validityPeriod">
-              <p class="card-number">8600 14** *** 8616</p>
-              <p class="validity-period">10/23</p>
-            </div>
-            <div class="cardholder-vs-uzcardLogoBox">
-              <p class="text-cardholder">ISTAMOV KHURSHID</p>
-              <img :src="iconUzcard" alt="iconUzcard" />
-            </div>
-            <img
-              class="iconMountainEffect"
-              :src="iconMountainEffect"
-              alt="iconMountainEffect"
-            />
+          <div class="cardholder-vs-uzcardLogoBox">
+            <p class="text-cardholder">ISTAMOV KHURSHID</p>
+            <img :src="iconUzcard" alt="iconUzcard" />
           </div>
-          <div class="card-box card-box-yellow">
-            <div class="card-box__title-box">
-              <div class="logo-box">
-                <img class="iconTbc" :src="iconTbc" alt="iconTbc" />
-                <p>TBC</p>
-              </div>
-              <div class="dot-menu">
-                <img class="iconDotMenu" :src="iconDotMenu" alt="iconDotMenu" />
-              </div>
+          <img
+            class="iconMountainEffect"
+            :src="iconMountainEffect"
+            alt="iconMountainEffect"
+          />
+        </div>
+        <div class="card-box card-box-red">
+          <div class="card-box__title-box">
+            <div class="logo-box">
+              <img class="iconTbc" :src="iconTbc" alt="iconTbc" />
+              <p>TBC</p>
             </div>
-            <p class="balance">945 881.24</p>
-            <div class="cardNumber-vs-validityPeriod">
-              <p class="card-number">8600 14** *** 8616</p>
-              <p class="validity-period">10/23</p>
+            <div class="dot-menu">
+              <img class="iconDotMenu" :src="iconDotMenu" alt="iconDotMenu" />
             </div>
-            <div class="cardholder-vs-uzcardLogoBox">
-              <p class="text-cardholder">ISTAMOV KHURSHID</p>
-              <img :src="iconUzcard" alt="iconUzcard" />
-            </div>
-            <img
-              class="iconMountainEffect"
-              :src="iconMountainEffect"
-              alt="iconMountainEffect"
-            />
           </div>
+          <p class="balance">945 881.24</p>
+          <div class="cardNumber-vs-validityPeriod">
+            <p class="card-number">8600 14** *** 8616</p>
+            <p class="validity-period">10/23</p>
+          </div>
+          <div class="cardholder-vs-uzcardLogoBox">
+            <p class="text-cardholder">ISTAMOV KHURSHID</p>
+            <img :src="iconUzcard" alt="iconUzcard" />
+          </div>
+          <img
+            class="iconMountainEffect"
+            :src="iconMountainEffect"
+            alt="iconMountainEffect"
+          />
+        </div>
+        <div class="card-box card-box-blue">
+          <div class="card-box__title-box">
+            <div class="logo-box">
+              <img class="iconTbc" :src="iconTbc" alt="iconTbc" />
+              <p>TBC</p>
+            </div>
+            <div class="dot-menu">
+              <img class="iconDotMenu" :src="iconDotMenu" alt="iconDotMenu" />
+            </div>
+          </div>
+          <p class="balance">945 881.24</p>
+          <div class="cardNumber-vs-validityPeriod">
+            <p class="card-number">8600 14** *** 8616</p>
+            <p class="validity-period">10/23</p>
+          </div>
+          <div class="cardholder-vs-uzcardLogoBox">
+            <p class="text-cardholder">ISTAMOV KHURSHID</p>
+            <img :src="iconUzcard" alt="iconUzcard" />
+          </div>
+          <img
+            class="iconMountainEffect"
+            :src="iconMountainEffect"
+            alt="iconMountainEffect"
+          />
+        </div>
+        <div class="card-box card-box-yellow">
+          <div class="card-box__title-box">
+            <div class="logo-box">
+              <img class="iconTbc" :src="iconTbc" alt="iconTbc" />
+              <p>TBC</p>
+            </div>
+            <div class="dot-menu">
+              <img class="iconDotMenu" :src="iconDotMenu" alt="iconDotMenu" />
+            </div>
+          </div>
+          <p class="balance">945 881.24</p>
+          <div class="cardNumber-vs-validityPeriod">
+            <p class="card-number">8600 14** *** 8616</p>
+            <p class="validity-period">10/23</p>
+          </div>
+          <div class="cardholder-vs-uzcardLogoBox">
+            <p class="text-cardholder">ISTAMOV KHURSHID</p>
+            <img :src="iconUzcard" alt="iconUzcard" />
+          </div>
+          <img
+            class="iconMountainEffect"
+            :src="iconMountainEffect"
+            alt="iconMountainEffect"
+          />
         </div>
       </div>
     </div>
@@ -144,19 +142,28 @@ export default {
 <style scoped>
 .my-cards {
   background: #f0f0f0;
+  height: 655px;
 }
-#main {
-  width: 97%;
-  height: 597px;
-  display: flex;
-  margin: 0px 24px 24px 24px;
+.my-cards__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  padding: 10px 0px 14px 24px;
 }
-
-.my-card-box {
-  background-color: #fff;
+.my-cards__title-gray {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #919191;
+}
+.my-cards-box {
+  height: 545px;
+  background: #fff;
+  margin: 0 24px;
   border-radius: 10px;
-  margin-bottom: 24px;
-  width: 94%;
 }
 
 .text-my-cards {
@@ -190,12 +197,15 @@ export default {
   font-size: 14px;
   color: #919191;
 }
+.text-cardholder {
+  font-size: 13px;
+}
 .card-box {
   border-radius: 10px;
   position: relative;
   padding: 13px 14px;
   width: 100%;
-  height: 180px;
+  height: 155px;
   margin-left: 22px;
 }
 .card-box-green {
@@ -215,9 +225,15 @@ export default {
   margin-right: 22px;
 }
 
+.card-number {
+  font-size: 15px;
+}
+
 .iconMountainEffect {
   position: absolute;
   bottom: 0;
+  left: -5px;
+  width: 100%;
 }
 .card-box__title-box {
   display: flex;
@@ -240,7 +256,7 @@ export default {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 28px;
   display: flex;
   align-items: center;
   letter-spacing: 0.05em;
@@ -260,6 +276,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   margin-top: 35px;
+  transform: translateY(-15px);
 }
 
 .cardholder-vs-uzcardLogoBox p {

@@ -253,6 +253,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease;
 }
 
 .transfer__buttons-box button:first-child {
@@ -260,15 +261,16 @@ export default {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  color: #ffffff;
+  color: #929292;
   padding: 14px 32px;
-  background: #0eb2b3;
+  background: #f0f0f0;
   border-radius: 10px;
-  border: 1px solid #0eb2b3;
+  border: 1px solid #f0f0f0;
   cursor: pointer;
   display: flex;
   gap: 10px;
 }
+
 .transfer__buttons-box button:nth-child(2),
 .transfer__buttons-box button:last-child {
   cursor: pointer;
@@ -283,6 +285,11 @@ export default {
   background: #f0f0f0;
   border-radius: 10px;
   border: 1px solid #f0f0f0;
+}
+.transfer__buttons-box button:hover,
+.transfer__buttons-box button:active {
+  background: #0eb2b3;
+  color: #fff;
 }
 
 .recipients-card-or-phone-number-box__title {

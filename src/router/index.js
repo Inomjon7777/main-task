@@ -5,7 +5,7 @@ import verification from "../components/verification/verification.vue";
 import mainPage from "../components/sidebar/main/main.vue";
 import transfersPage from "../components/sidebar/transfers/transfers.vue";
 import paymentsPage from "../components/sidebar/payments/payments.vue";
-import myCardsPage from "../components/sidebar/my-cards/my-cards.vue";
+import myCardsPage from "../components/sidebar/my-cards/my-cards.vue"
 import monitoringPage from "../components/sidebar/monitoring/monitoring.vue";
 import dashboard from "../components/dashboard/dashboard.vue";
 import sidebar from "../components/sidebar/sidebar.vue";
