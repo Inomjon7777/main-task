@@ -1,7 +1,7 @@
 <template>
   <div class="monitoring">
     <p class="monitoring__title">
-      Asosiy<span class="monitoring__title-gray"> / monitoring</span>
+      Asosiy<span class="monitoring__title-gray"> / Monitoring</span>
     </p>
     <div class="monitoring-box">
       <div class="monitoring-box__title-box">

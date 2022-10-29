@@ -160,7 +160,7 @@ export default {
   color: #919191;
 }
 .my-cards-box {
-  height: 545px;
+  height: 585px;
   background: #fff;
   margin: 0 24px;
   border-radius: 10px;
@@ -270,6 +270,9 @@ export default {
 }
 .cardNumber-vs-validityPeriod p {
   color: #fff;
+}
+.validity-period {
+  font-size: 15px;
 }
 .cardholder-vs-uzcardLogoBox {
   display: flex;

@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .dashboard {
   height: 100vh;
   display: flex;
