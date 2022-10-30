@@ -132,11 +132,111 @@
           </div>
           <!-- currency-box -->
           <div class="currency-box">
-            <select>
+            <select class="currency-box-select">
               <option value="Markaziy bank kurslari">
                 Markaziy bank kurslari
               </option>
             </select>
+            <!-- usd -->
+            <div class="currencies-box">
+              <div class="currencies-flag-box">
+                <img
+                  class="icon_united_states"
+                  :src="icon_united_states"
+                  alt="icon_united_states"
+                />
+                <p>1 USD</p>
+              </div>
+              <div class="currencies-buy-box">
+                <p>Sotib olish</p>
+                <span>11 055.00</span>
+                <img
+                  class="icon_to_bottom"
+                  :src="icon_to_bottom"
+                  alt="icon_to_bottom"
+                />
+              </div>
+              <div class="currencies-sell-box">
+                <p>Sotish</p>
+                <span>11 085.00</span>
+                <img class="icon_to_top" :src="icon_to_top" alt="icon_to_top" />
+              </div>
+            </div>
+            <!-- eur -->
+            <div class="currencies-box">
+              <div class="currencies-flag-box">
+                <img
+                  class="icon_european_union"
+                  :src="icon_european_union"
+                  alt="icon_european_union"
+                />
+                <p>1 EUR</p>
+              </div>
+              <div class="currencies-buy-box">
+                <p>Sotib olish</p>
+                <span>11 055.00</span>
+                <img class="icon_to_top" :src="icon_to_top" alt="icon_to_top" />
+              </div>
+              <div class="currencies-sell-box">
+                <p>Sotish</p>
+                <span>11 085.00</span>
+                <img
+                  class="icon_to_bottom"
+                  :src="icon_to_bottom"
+                  alt="icon_to_bottom"
+                />
+              </div>
+            </div>
+            <!-- eur -->
+            <div class="currencies-box">
+              <div class="currencies-flag-box">
+                <img
+                  class="icon_united_kingdom"
+                  :src="icon_united_kingdom"
+                  alt="icon_united_kingdom"
+                />
+                <p>1 GBP</p>
+              </div>
+              <div class="currencies-buy-box">
+                <p>Sotib olish</p>
+                <span>11 055.00</span>
+                <img class="icon_to_top" :src="icon_to_top" alt="icon_to_top" />
+              </div>
+              <div class="currencies-sell-box">
+                <p>Sotish</p>
+                <span>11 085.00</span>
+                <img
+                  class="icon_to_bottom"
+                  :src="icon_to_bottom"
+                  alt="icon_to_bottom"
+                />
+              </div>
+            </div>
+            <!-- rub -->
+            <div class="currencies-box">
+              <div class="currencies-flag-box">
+                <img
+                  class="icon_russia_flag"
+                  :src="icon_russia_flag"
+                  alt="icon_ussia_flag"
+                />
+                <p>1 GBP</p>
+              </div>
+              <div class="currencies-buy-box">
+                <p>Sotib olish</p>
+                <span>11 055.00</span>
+                <img class="icon_to_top" :src="icon_to_top" alt="icon_to_top" />
+              </div>
+              <div class="currencies-sell-box">
+                <p>Sotish</p>
+                <span>11 085.00</span>
+                <img
+                  class="icon_to_bottom"
+                  :src="icon_to_bottom"
+                  alt="icon_to_bottom"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -269,11 +369,7 @@ export default {
   margin: 15px 0;
   border-radius: 10px;
 }
-.currency-box {
-  height: 28%;
-  background: #fff;
-  border-radius: 10px;
-}
+
 .smart-market-box {
   display: flex;
   width: max-content;
@@ -457,5 +553,65 @@ export default {
 .icon_tbc_bank {
   width: 20px;
   height: 20px;
+}
+/*currency*/
+.currency-box {
+  height: 28%;
+  background: #fff;
+  border-radius: 10px;
+}
+.currencies-box {
+  margin: 0 15px;
+}
+.currencies-box,
+.currencies-flag-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.currency-box-select {
+  width: 93%;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #021723;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 10px 10px 7px 10px;
+}
+.currencies-flag-box img {
+  width: 18px;
+  height: 18px;
+}
+.currencies-flag-box p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  color: #000000;
+  margin-left: 10px;
+}
+.currencies-buy-box p,
+.currencies-sell-box p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  color: #7b839e;
+}
+.currencies-buy-box span,
+.currencies-sell-box span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #000000;
+}
+.currencies-buy-box img,
+.currencies-sell-box img {
+  margin-left: 5px;
+  margin-bottom: 4px;
 }
 </style>
