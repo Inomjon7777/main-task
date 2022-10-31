@@ -506,13 +506,13 @@ export default {};
   width: 5px;
   height: 13px;
   position: relative;
-  top: 38px;
+  top: 97px;
   border-radius: 10px 10px 0px 0px;
 }
 .seven .two-line {
   width: 5px;
   height: 5px;
-  top: 46px;
+  top: 105px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
@@ -520,13 +520,13 @@ export default {};
   width: 5px;
   height: 2px;
   position: relative;
-  top: 48px;
+  top: 108px;
   border-radius: 10px 10px 0px 0px;
 }
 .eight .two-line {
   width: 5px;
   height: 26px;
-  top: 24px;
+  top: 84px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
@@ -534,13 +534,13 @@ export default {};
   width: 5px;
   height: 2px;
   position: relative;
-  top: 48px;
+  top: 108px;
   border-radius: 10px 10px 0px 0px;
 }
 .nine .two-line {
   width: 5px;
   height: 26px;
-  top: 24px;
+  top: 84px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
@@ -548,13 +548,13 @@ export default {};
   width: 5px;
   height: 4px;
   position: relative;
-  top: 46px;
+  top: 106px;
   border-radius: 10px 10px 0px 0px;
 }
 .ten .two-line {
   width: 5px;
-  height: 52px;
-  top: -2px;
+  height: 42px;
+  top: 68px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
@@ -562,13 +562,13 @@ export default {};
   width: 5px;
   height: 2px;
   position: relative;
-  top: 48px;
+  top: 108px;
   border-radius: 10px 10px 0px 0px;
 }
 .eleven .two-line {
   width: 5px;
-  height: 102px;
-  top: -52px;
+  height: 78px;
+  top: 32px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
@@ -576,13 +576,13 @@ export default {};
   width: 5px;
   height: 2px;
   position: relative;
-  top: 48px;
+  top: 108px;
   border-radius: 10px 10px 0px 0px;
 }
 .twelve .two-line {
   width: 5px;
-  height: 73px;
-  top: -23px;
+  height: 52px;
+  top: 58px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
@@ -590,27 +590,27 @@ export default {};
   width: 5px;
   height: 2px;
   position: relative;
-  top: 48px;
+  top: 108px;
   border-radius: 10px 10px 0px 0px;
 }
 .thirteen .two-line {
   width: 5px;
-  height: 30px;
-  top: 20px;
+  height: 20px;
+  top: 90px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .fourteen .one-line {
   width: 5px;
   height: 3px;
-  top: 47px;
+  top: 107px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .fourteen .two-line {
   width: 5px;
-  height: 60px;
-  top: -10px;
+  height: 40px;
+  top: 70px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
@@ -618,13 +618,13 @@ export default {};
   width: 5px;
   height: 2px;
   position: relative;
-  top: 48px;
+  top: 108px;
   border-radius: 10px 10px 0px 0px;
 }
 .fiveteen .two-line {
   width: 5px;
-  height: 25px;
-  top: 25px;
+  height: 17px;
+  top: 93px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
@@ -632,83 +632,83 @@ export default {};
   width: 5px;
   height: 4px;
   position: relative;
-  top: 46px;
+  top: 106px;
   border-radius: 10px 10px 0px 0px;
 }
 .sixteen .two-line {
   width: 5px;
-  height: 102px;
-  top: -52px;
+  height: 78px;
+  top: 32px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .seventeen .one-line {
   width: 5px;
-  height: 170px;
-  top: -120px;
+  height: 150px;
+  top: -40px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .seventeen .two-line {
   width: 5px;
-  height: 125px;
-  top: -75px;
+  height: 120px;
+  top: -10px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .eighteen .one-line {
   width: 5px;
-  height: 102px;
-  top: -52px;
+  height: 78px;
+  top: 32px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .eighteen .two-line {
   width: 5px;
-  height: 75px;
-  top: -25px;
+  height: 52px;
+  top: 58px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .nineteen .one-line {
   width: 5px;
-  height: 42px;
-  top: 8px;
+  height: 29px;
+  top: 81px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .nineteen .two-line {
   width: 5px;
-  height: 32px;
-  top: 18px;
+  height: 22px;
+  top: 88px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty .one-line {
   width: 5px;
-  height: 155px;
-  top: -105px;
+  height: 140px;
+  top: -30px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty .two-line {
   width: 5px;
-  height: 115px;
-  top: -65px;
+  height: 110px;
+  top: 0px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-one .one-line {
   width: 5px;
-  height: 18px;
-  top: 32px;
+  height: 14px;
+  top: 96px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-one .two-line {
   width: 5px;
-  height: 14px;
-  top: 36px;
+  height: 10px;
+  top: 100px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
@@ -716,125 +716,125 @@ export default {};
   width: 5px;
   height: 4px;
   position: relative;
-  top: 46px;
+  top: 106px;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-two .two-line {
   width: 5px;
-  height: 14px;
-  top: 36px;
+  height: 10px;
+  top: 100px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-three .one-line {
   width: 5px;
-  height: 52px;
-  top: -2px;
+  height: 42px;
+  top: 68px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-three .two-line {
   width: 5px;
-  height: 42px;
-  top: 8px;
+  height: 28px;
+  top: 82px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-four .one-line {
   width: 5px;
   height: 16px;
-  top: 34px;
+  top: 94px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-four .two-line {
   width: 5px;
   height: 12px;
-  top: 38px;
+  top: 98px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-five .one-line {
   width: 5px;
-  height: 110px;
-  top: -60px;
+  height: 75px;
+  top: 35px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-five .two-line {
   width: 5px;
-  height: 82px;
-  top: -32px;
+  height: 60px;
+  top: 50px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-six .one-line {
   width: 5px;
-  height: 98px;
-  top: -48px;
+  height: 70px;
+  top: 40px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-six .two-line {
   width: 5px;
-  height: 75px;
-  top: -25px;
+  height: 55px;
+  top: 55px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-seven .one-line {
   width: 5px;
-  height: 98px;
-  top: -48px;
+  height: 70px;
+  top: 40px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-seven .two-line {
   width: 5px;
-  height: 75px;
-  top: -25px;
+  height: 55px;
+  top: 55px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-eight .one-line {
   width: 5px;
   height: 3px;
-  top: 47px;
+  top: 107px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-eight .two-line {
   width: 5px;
-  height: 60px;
-  top: -10px;
+  height: 40px;
+  top: 70px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-nine .one-line {
   width: 5px;
   height: 3px;
-  top: 47px;
+  top: 107px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .twenty-nine .two-line {
   width: 5px;
-  height: 60px;
-  top: -10px;
+  height: 40px;
+  top: 70px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .thirty .one-line {
   width: 5px;
   height: 3px;
-  top: 47px;
+  top: 107px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
 .thirty .two-line {
   width: 5px;
   height: 3px;
-  top: 47px;
+  top: 107px;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
