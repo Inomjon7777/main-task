@@ -10,51 +10,61 @@
           <!-- sidebar-background-boxes -->
           <div class="sidebar-background-boxes">
             <div class="sidebar-background-box">
-              <img
-                class="backgroundOne"
-                :src="backgroundOne"
-                alt="backgroundOne"
-              />
+              <div class="backgroundOneBox">
+                <img
+                  class="backgroundOne"
+                  :src="backgroundOne"
+                  alt="backgroundOne"
+                />
+              </div>
               <p class="suptitle">News</p>
               <p class="title">News title</p>
               <p class="description">This is description</p>
             </div>
             <div class="sidebar-background-box">
-              <img
-                class="backgroundTwo"
-                :src="backgroundTwo"
-                alt="backgroundTwo"
-              />
+              <div class="backgroundTwoBox">
+                <img
+                  class="backgroundTwo"
+                  :src="backgroundTwo"
+                  alt="backgroundTwo"
+                />
+              </div>
               <p class="suptitle">News</p>
               <p class="title">News title</p>
               <p class="description">This is description</p>
             </div>
             <div class="sidebar-background-box">
-              <img
-                class="backgroundThree"
-                :src="backgroundThree"
-                alt="backgroundThree"
-              />
+              <div class="backgroundThreeBox">
+                <img
+                  class="backgroundThree"
+                  :src="backgroundThree"
+                  alt="backgroundThree"
+                />
+              </div>
               <p class="suptitle">News</p>
               <p class="title">News title</p>
               <p class="description">This is description</p>
             </div>
             <div class="sidebar-background-box">
-              <img
-                class="backgroundFour"
-                :src="backgroundFour"
-                alt="backgroundFour"
-              />
+              <div class="backgroundFourBox">
+                <img
+                  class="backgroundFour"
+                  :src="backgroundFour"
+                  alt="backgroundFour"
+                />
+              </div>
               <p class="suptitle">News</p>
               <p class="title">News title</p>
               <p class="description">This is description</p>
             </div>
             <div class="sidebar-background-box">
-              <img
-                class="backgroundFive"
-                :src="backgroundFive"
-                alt="backgroundFive"
-              />
+              <div class="backgroundFiveBox">
+                <img
+                  class="backgroundFive"
+                  :src="backgroundFive"
+                  alt="backgroundFive"
+                />
+              </div>
               <p class="suptitle">News</p>
               <p class="title">News title</p>
               <p class="description">This is description</p>
@@ -130,213 +140,7 @@
               </div>
             </div>
 
-            <!-- monitoring-of-payments-line-box -->
-            <div class="monitoring-of-payments-line-box">
-              <!-- 14M -->
-              <div class="line-box">
-                <p>14M</p>
-                <div class="line line-14"></div>
-              </div>
-              <!-- 12M -->
-              <div class="line-box">
-                <p>12M</p>
-                <div class="line line-12"></div>
-              </div>
-              <!-- 10M -->
-              <div class="line-box">
-                <p>10M</p>
-                <div class="line line-10"></div>
-              </div>
-              <!-- 8M -->
-              <div class="line-box">
-                <p>8M</p>
-                <div class="line line-8"></div>
-              </div>
-              <!-- 6M -->
-              <div class="line-box">
-                <p>6M</p>
-                <div class="line line-6"></div>
-              </div>
-              <!-- 4M -->
-              <div class="line-box">
-                <p>4M</p>
-                <div class="line line-4"></div>
-              </div>
-              <!-- 2M -->
-              <div class="line-box">
-                <p>2M</p>
-                <div class="line line-2"></div>
-              </div>
-              <!-- NOL M -->
-              <div class="line-box">
-                <p>0</p>
-                <div class="line line-0"></div>
-              </div>
-            </div>
-            <div class="numbers">
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
-              <span>4</span>
-              <span>5</span>
-              <span>6</span>
-              <span>7</span>
-              <span>8</span>
-              <span>9</span>
-              <span>10</span>
-              <span>11</span>
-              <span>12</span>
-              <span>13</span>
-              <span>14</span>
-              <span>15</span>
-              <span>16</span>
-              <span>17</span>
-              <span>18</span>
-              <span>19</span>
-              <span>20</span>
-              <span>21</span>
-              <span>22</span>
-              <span>23</span>
-              <span>24</span>
-              <span>25</span>
-              <span>26</span>
-              <span>27</span>
-              <span>28</span>
-              <span>29</span>
-              <span>30</span>
-            </div>
-            <div class="equalizer-box">
-              <div class="one">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span
-                  class="second-equalizer equalizer yellow-equalizer"
-                ></span>
-              </div>
-              <div class="two">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span
-                  class="second-equalizer equalizer yellow-equalizer"
-                ></span>
-              </div>
-              <div class="three">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="four">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span
-                  class="second-equalizer equalizer yellow-equalizer"
-                ></span>
-              </div>
-              <div class="five">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span
-                  class="second-equalizer equalizer yellow-equalizer"
-                ></span>
-              </div>
-              <div class="six">
-                <span class="first-equalizer equalizer yellow-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="seven">
-                <span class="first-equalizer equalizer yellow-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="eight">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span
-                  class="second-equalizer equalizer yellow-equalizer"
-                ></span>
-              </div>
-              <div class="nine">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="ten">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="eleven">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="twelve">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="thirteen">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="fourteen">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="fiveteen">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="sixteen">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="seventeen">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="eightteen">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="nineteen">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="twenty">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="twenty-one">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="twenty-two">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="twenty-three">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="twenty-four">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="twenty-five">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="twenty-six">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="twenty-seven">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="twenty-eight">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="twenty-nine">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-              <div class="thirty">
-                <span class="first-equalizer equalizer blue-equalizer"></span>
-                <span class="second-equalizer equalizer blue-equalizer"></span>
-              </div>
-            </div>
+            <main_monitoring />
           </div>
         </div>
 
@@ -508,6 +312,7 @@
 <script>
 //components
 import sidebarNavigation from "../sidebar-navigation/sidebar-navigation.vue";
+import main_monitoring from "../../main_monitoring.vue";
 //images
 import backgroundOne from "../../../assets/images/main/background-1.png";
 import backgroundTwo from "../../../assets/images/main/background-2.png";
@@ -561,6 +366,7 @@ export default {
   },
   components: {
     sidebarNavigation,
+    main_monitoring,
   },
 };
 </script>
@@ -569,7 +375,11 @@ export default {
   display: flex;
 }
 .main {
-  background: #fafafa;
+  background: #f0f0f0;
+  height: 655px;
+}
+.main-box {
+  width: 80%;
 }
 .title-black {
   font-family: "Gilroy";
@@ -588,7 +398,9 @@ export default {
 }
 .sidebar-background-boxes {
   display: flex;
-  gap: 23px;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
 }
 .sidebar-background-box {
   margin-top: 14px;
@@ -633,13 +445,20 @@ export default {
   top: 82px;
   left: 10px;
 }
+.backgroundOneBox,
+.backgroundTwoBox,
+.backgroundThreeBox,
+.backgroundFourBox,
+.backgroundFiveBox {
+  width: 150px;
+}
 
 .backgroundOne,
 .backgroundTwo,
 .backgroundThree,
 .backgroundFour,
 .backgroundFive {
-  width: 160px;
+  width: 100% !important;
   height: 100px;
 }
 
@@ -845,273 +664,12 @@ export default {
 .line-8 {
   margin-left: 7px;
 }
-.numbers {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  letter-spacing: -0.02em;
-  color: #4a5568;
-  padding-left: 35px;
-  padding-top: 10px;
-}
-.equalizer {
-  position: absolute;
-  width: 5px;
-  bottom: 42.5px;
-  border-radius: 10px 10px 0px 0px;
-}
-.blue-equalizer {
-  background: #137cdd;
-}
-.yellow-equalizer {
-  background: #ffd43b;
-}
-.one .first-equalizer {
-  height: 80px;
-  left: 49px;
-}
-.one .second-equalizer {
-  height: 60px;
-  left: 54px;
-}
-.two .first-equalizer {
-  height: 1.4px;
-  left: 72px;
-}
-.two .second-equalizer {
-  height: 19px;
-  left: 76px;
-}
-.three .first-equalizer {
-  height: 1.4px;
-  left: 97px;
-}
-.three .second-equalizer {
-  height: 42px;
-  left: 102px;
-}
-.four .first-equalizer {
-  height: 1.4px;
-  left: 121px;
-}
-.four .second-equalizer {
-  height: 12px;
-  left: 126px;
-}
-.five .first-equalizer {
-  height: 1.4px;
-  left: 146px;
-}
-.five .second-equalizer {
-  height: 8px;
-  left: 151px;
-}
-.six .first-equalizer {
-  height: 15px;
-  left: 170px;
-}
-.six .second-equalizer {
-  height: 5px;
-  left: 175px;
-}
-.seven .first-equalizer {
-  height: 10px;
-  left: 197px;
-}
-.seven .second-equalizer {
-  height: 5px;
-  left: 202px;
-}
-.eight .first-equalizer {
-  height: 1.4px;
-  left: 220px;
-}
-.eight .second-equalizer {
-  height: 19px;
-  left: 225px;
-}
-.nine .first-equalizer {
-  height: 1.4px;
-  left: 244px;
-}
-.nine .second-equalizer {
-  height: 19px;
-  left: 249px;
-}
-.ten .first-equalizer {
-  height: 2.5px;
-  left: 271px;
-}
-.ten .second-equalizer {
-  height: 40px;
-  left: 276px;
-}
-.eleven .first-equalizer {
-  height: 3px;
-  left: 301px;
-}
-.eleven .second-equalizer {
-  height: 72px;
-  left: 306px;
-}
-.twelve .first-equalizer {
-  height: 2.5px;
-  left: 330px;
-}
-.twelve .second-equalizer {
-  height: 52px;
-  left: 335px;
-}
-.thirteen .first-equalizer {
-  height: 1.4px;
-  left: 360px;
-}
-.thirteen .second-equalizer {
-  height: 22px;
-  left: 365px;
-}
-.fourteen .first-equalizer {
-  height: 1.4px;
-  left: 390px;
-}
-.fourteen .second-equalizer {
-  height: 45px;
-  left: 395px;
-}
-.fiveteen .first-equalizer {
-  height: 1.4px;
-  left: 420px;
-}
-.fiveteen .second-equalizer {
-  height: 17px;
-  left: 425px;
-}
-.sixteen .first-equalizer {
-  height: 3px;
-  left: 450px;
-}
-.sixteen .second-equalizer {
-  height: 72px;
-  left: 455px;
-}
-.seventeen .first-equalizer {
-  height: 117px;
-  left: 480px;
-}
-.seventeen .second-equalizer {
-  height: 90px;
-  left: 485px;
-}
-.eightteen .first-equalizer {
-  height: 72px;
-  left: 510px;
-}
-.eightteen .second-equalizer {
-  height: 52px;
-  left: 515px;
-}
-.nineteen .first-equalizer {
-  height: 30px;
-  left: 540px;
-}
-.nineteen .second-equalizer {
-  height: 23px;
-  left: 545px;
-}
-.twenty .first-equalizer {
-  height: 108px;
-  left: 568px;
-}
-.twenty .second-equalizer {
-  height: 82px;
-  left: 573px;
-}
-.twenty-one .first-equalizer {
-  height: 14px;
-  left: 598px;
-}
-.twenty-one .second-equalizer {
-  height: 9px;
-  left: 603px;
-}
-.twenty-two .first-equalizer {
-  height: 2.5px;
-  left: 628px;
-}
-.twenty-two .second-equalizer {
-  height: 9px;
-  left: 633px;
-}
-.twenty-three .first-equalizer {
-  height: 40px;
-  left: 658px;
-}
-.twenty-three .second-equalizer {
-  height: 28px;
-  left: 663px;
-}
-.twenty-four .first-equalizer {
-  height: 15px;
-  left: 688px;
-}
-.twenty-four .second-equalizer {
-  height: 10px;
-  left: 693px;
-}
-.twenty-five .first-equalizer {
-  height: 76px;
-  left: 717px;
-}
-.twenty-five .second-equalizer {
-  height: 56px;
-  left: 722px;
-}
-.twenty-six .first-equalizer {
-  height: 70px;
-  left: 747px;
-}
-.twenty-six .second-equalizer {
-  height: 50px;
-  left: 752px;
-}
-.twenty-seven .first-equalizer {
-  height: 70px;
-  left: 777px;
-}
-.twenty-seven .second-equalizer {
-  height: 50px;
-  left: 782px;
-}
-.twenty-eight .first-equalizer {
-  height: 2.5px;
-  left: 806px;
-}
-.twenty-eight .second-equalizer {
-  height: 42px;
-  left: 811px;
-}
-.twenty-nine .first-equalizer {
-  height: 2.5px;
-  left: 837px;
-}
-.twenty-nine .second-equalizer {
-  height: 42px;
-  left: 842px;
-}
-.thirty .first-equalizer {
-  height: 2.5px;
-  left: 865px;
-}
-.thirty .second-equalizer {
-  height: 2.5px;
-  left: 870px;
-}
+
 /*balance-section*/
 .balance-section {
   margin-left: 24px;
+  margin-right: 24px;
+  width: 30%;
 }
 .balance-section-title {
   font-family: "Gilroy";
@@ -1151,7 +709,7 @@ export default {
   background: #ffffff;
   border-radius: 10px;
   padding: 10px;
-  width: 100%;
+  width: 102%;
 }
 .receipts-box-word-box p:first-child,
 .expenses-box-word-box p:first-child {
@@ -1264,7 +822,7 @@ export default {
 .iconMountainEffect {
   position: absolute;
   bottom: 0;
-  left: -55px;
+  width: 100%;
 }
 
 .myCards {
@@ -1289,7 +847,7 @@ export default {
   background: #fff;
   border-radius: 10px;
   padding: 10px;
-  width: 100%;
+  width: 102%;
 }
 .central-bank-rates select {
   border: none;
@@ -1340,7 +898,7 @@ export default {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14.5px;
   color: #000000;
   display: flex;
   align-items: center;
@@ -1349,5 +907,63 @@ export default {
 .buy-box img,
 .sell-box img {
   margin-left: 3px;
+}
+/******Equalizer******/
+.equalizers_with_numbers_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+.equalizers_with_numbers_wrapper_one,
+.equalizers_with_numbers_wrapper_two {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.equalizers_number_one,
+.equalizers_number_two,
+.equalizers_number_three,
+.equalizers_number_four,
+.equalizers_number_five,
+.equalizers_number_six,
+.equalizers_number_seven {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: -0.02em;
+  color: #4a5568;
+}
+.equalizers_itself_one,
+.equalizers_itself_two {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.equalizers_itself_one_one1 {
+  width: 7px;
+  height: 139px;
+  background: #137cdd;
+  border-radius: 10px 10px 0px 0px;
+}
+.equalizers_itself_two_one1 {
+  width: 7px;
+  height: 139px;
+  background: #137cdd;
+  border-radius: 10px 10px 0px 0px;
+}
+.equalizers_itself_one_two2 {
+  width: 7px;
+  height: 100px;
+  background: #ffd43b;
+  border-radius: 10px 10px 0px 0px;
+}
+.equalizers_itself_two_two2 {
+  width: 7px;
+  height: 100px;
+  background: #ffd43b;
+  border-radius: 10px 10px 0px 0px;
 }
 </style>

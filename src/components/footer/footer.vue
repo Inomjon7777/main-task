@@ -28,13 +28,13 @@
           <li>Ekologik siyosat</li>
         </ul>
         <div class="social-networks">
-          <a href="https://desktop.telegram.org/"  target="blank">
+          <a href="https://desktop.telegram.org/" target="blank">
             <img class="telegram" :src="telegram" alt="telegram" />
           </a>
-          <a href="https://www.facebook.com/"  target="blank">
+          <a href="https://www.facebook.com/" target="blank">
             <img class="facebook" :src="facebook" alt="facebook" />
           </a>
-          <a href="https://www.instagram.com/"  target="blank">
+          <a href="https://www.instagram.com/" target="blank">
             <img class="instagram" :src="instagram" alt="instagram" />
           </a>
         </div>
@@ -50,7 +50,9 @@
         <p class="website-creator">
           Sayt yaratuvchisi:
           <span class="realsoft">
-            <a class="realsoft-link" href="https://realsoft.uz/"  target="blank">REALSOFT</a>
+            <a class="realsoft-link" href="https://realsoft.uz/" target="blank"
+              >REALSOFT</a
+            >
           </span>
         </p>
       </div>
@@ -64,6 +66,7 @@ import logo from "../../assets/icons/footer/logo.svg";
 import telegram from "../../assets/icons/footer/telegram.svg";
 import facebook from "../../assets/icons/footer/facebook.svg";
 import instagram from "../../assets/icons/footer/instagram.svg";
+
 export default {
   data() {
     return {

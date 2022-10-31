@@ -18,6 +18,8 @@
             To’lovlar
           </p>
 
+          
+
           <p class="dispatcher-assistance">
             <img class="headset" :src="headset" alt="headset" />
             24/7 yordam

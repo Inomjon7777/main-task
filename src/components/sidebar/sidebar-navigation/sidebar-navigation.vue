@@ -49,6 +49,10 @@ export default {
 };
 </script>
 <style scoped>
+.sidebar-navigation-box {
+  margin: 0 60px;
+}
+
 .sidebar-navigation-box,
 .sidebar-navigation-navbar,
 .input-box,
